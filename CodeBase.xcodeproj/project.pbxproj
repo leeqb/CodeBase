@@ -25,6 +25,7 @@
 		830F8C1A1BEF08E6008DB6FE /* CBTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 830F8C121BEF08E6008DB6FE /* CBTableView.m */; };
 		830F8C1C1BEF08FF008DB6FE /* CodeBase.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 830F8C1B1BEF08FF008DB6FE /* CodeBase.podspec */; };
 		83A341451BEF20BB0047A422 /* Examples.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83A341441BEF20BB0047A422 /* Examples.storyboard */; };
+		83A3414A1BEF22970047A422 /* TestSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A341491BEF22970047A422 /* TestSwift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,8 @@
 		830F8C1B1BEF08FF008DB6FE /* CodeBase.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CodeBase.podspec; sourceTree = "<group>"; };
 		83A341441BEF20BB0047A422 /* Examples.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Examples.storyboard; sourceTree = "<group>"; };
 		83A341471BEF21040047A422 /* Base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Base.h; sourceTree = "<group>"; };
+		83A341481BEF22960047A422 /* CodeBase-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CodeBase-Bridging-Header.h"; sourceTree = "<group>"; };
+		83A341491BEF22970047A422 /* TestSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSwift.swift; sourceTree = "<group>"; };
 		D6357BC01AA9874FE1040714 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -196,6 +199,8 @@
 				830F8C031BEF08E6008DB6FE /* Base */,
 				830F8C0D1BEF08E6008DB6FE /* Helper */,
 				830F8C101BEF08E6008DB6FE /* UIKit */,
+				83A341491BEF22970047A422 /* TestSwift.swift */,
+				83A341481BEF22960047A422 /* CodeBase-Bridging-Header.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -451,6 +456,7 @@
 				830F8C181BEF08E6008DB6FE /* CBValidation.m in Sources */,
 				830F8C151BEF08E6008DB6FE /* BaseController.m in Sources */,
 				830F8C191BEF08E6008DB6FE /* CBNetworkHelper.m in Sources */,
+				83A3414A1BEF22970047A422 /* TestSwift.swift in Sources */,
 				830F8BD11BEF083D008DB6FE /* AppDelegate.m in Sources */,
 				830F8BCE1BEF083D008DB6FE /* main.m in Sources */,
 				830F8C161BEF08E6008DB6FE /* BaseTableViewController.m in Sources */,
@@ -595,10 +601,13 @@
 			baseConfigurationReference = 4BCB7E21C7080326949829E5 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CodeBase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.powerlee.CodeBase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CodeBase/Classes/CodeBase-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -607,10 +616,12 @@
 			baseConfigurationReference = 4215539AB49F0679A0CC8C13 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CodeBase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.powerlee.CodeBase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CodeBase/Classes/CodeBase-Bridging-Header.h";
 			};
 			name = Release;
 		};
