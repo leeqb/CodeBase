@@ -81,7 +81,6 @@
 		830F8C1B1BEF08FF008DB6FE /* CodeBase.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CodeBase.podspec; sourceTree = "<group>"; };
 		83A341441BEF20BB0047A422 /* Examples.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Examples.storyboard; sourceTree = "<group>"; };
 		83A341471BEF21040047A422 /* Base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Base.h; sourceTree = "<group>"; };
-		83A341481BEF22960047A422 /* CodeBase-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CodeBase-Bridging-Header.h"; sourceTree = "<group>"; };
 		83A341491BEF22970047A422 /* TestSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSwift.swift; sourceTree = "<group>"; };
 		D6357BC01AA9874FE1040714 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -200,7 +199,6 @@
 				830F8C0D1BEF08E6008DB6FE /* Helper */,
 				830F8C101BEF08E6008DB6FE /* UIKit */,
 				83A341491BEF22970047A422 /* TestSwift.swift */,
-				83A341481BEF22960047A422 /* CodeBase-Bridging-Header.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -606,7 +604,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.powerlee.CodeBase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "CodeBase/Classes/CodeBase-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -621,7 +619,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.powerlee.CodeBase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "CodeBase/Classes/CodeBase-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
