@@ -97,15 +97,14 @@ Pod::Spec.new do |s|
 
   s.subspec "Base" do |bs|
     bs.source_files = "CodeBase/Classes/*"
-    bs.subspec "Base" do |bs|
-      bs.source_files = "CodeBase/Classes/Base/*"
-    end
-    bs.subspec "Helper" do |hp|
-      hp.source_files = "CodeBase/Classes/Helper/*"
-    end
-    bs.subspec "UIKit" do |ut|
-      ut.source_files = "CodeBase/Classes/UIKit/*"
-    end
+  end
+
+  s.subspec "Helper" do |hp|
+    hp.source_files = "CodeBase/Classes/Helper/*"
+  end
+
+  s.subspec "UIKit" do |ut|
+    ut.source_files = "CodeBase/Classes/UIKit/*"
   end
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
