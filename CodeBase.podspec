@@ -96,7 +96,7 @@ Pod::Spec.new do |s|
   # s.public_header_files = "Classes/**/*.h"
 
   s.subspec "Base" do |bs|
-    bs.source_files = "CodeBase/Classes/*"
+    bs.source_files = "CodeBase/Classes/Base/*"
   end
 
   s.subspec "Helper" do |hp|
