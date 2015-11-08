@@ -52,7 +52,7 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "leeqb" => "email@address.com" }
+  s.author             = { "leeqb" => "252262021@qq.com" }
   # Or just: s.author    = "leeqb"
   # s.authors            = { "leeqb" => "email@address.com" }
   # s.social_media_url   = "http://twitter.com/leeqb"
@@ -95,26 +95,16 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = "Classes/**/*.h"
 
-  s.subspec "ObjC" do |oc|
-    oc.source_files = "CodeBase/Classes/ObjC/*"
-    oc.subspec "Base" do |bs|
-      bs.source_files = "CodeBase/Classes/ObjC/Base/*"
+  s.subspec "Base" do |bs|
+    bs.source_files = "CodeBase/Classes/*"
+    bs.subspec "Base" do |bs|
+      bs.source_files = "CodeBase/Classes/Base/*"
     end
-    oc.subspec "Helper" do |hp|
-      hp.source_files = "CodeBase/Classes/ObjC/Helper/*"
+    bs.subspec "Helper" do |hp|
+      hp.source_files = "CodeBase/Classes/Helper/*"
     end
-    oc.subspec "UIKit" do |ut|
-      ut.source_files = "CodeBase/Classes/ObjC/UIKit/*"
-    end
-  end
-
-  s.subspec "Swift" do |st|
-    st.source_files = "CodeBase/Classes/Swift/*"
-    st.subspec "Helper" do |hp|
-      hp.source_files = "CodeBase/Classes/Swift/Helper/*"
-    end
-    st.subspec "UIKit" do |ut|
-      ut.source_files = "CodeBase/Classes/Swift/UIKit/*"
+    bs.subspec "UIKit" do |ut|
+      ut.source_files = "CodeBase/Classes/UIKit/*"
     end
   end
 

@@ -6,7 +6,7 @@
 //  Copyright © 2015 powerlee. All rights reserved.
 //
 
-#import <AFNetworking/AFNetworking.h>
+#import <AFNetworking.h>
 
 @interface CBNetworkHelper : NSObject
 
