@@ -99,6 +99,10 @@ Pod::Spec.new do |s|
     bs.source_files = "CodeBase/Classes/Base/*"
   end
 
+  s.subspec "Category" do |cy|
+    cy.source_files = "CodeBase/Category/Base/*"
+  end
+
   s.subspec "Helper" do |hp|
     hp.source_files = "CodeBase/Classes/Helper/*"
   end
