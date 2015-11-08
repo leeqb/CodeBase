@@ -7,5 +7,11 @@
 //
 
 #import "Base.h"
+
 #import "CBNetworkHelper.h"
 #import "CBTableView.h"
+
+#import "BaseModel.h"
+#import "BaseController.h"
+#import "BaseViewController.h"
+#import "BaseTableViewController.h"

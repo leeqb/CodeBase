@@ -25,6 +25,7 @@
 		830F8C1A1BEF08E6008DB6FE /* CBTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 830F8C121BEF08E6008DB6FE /* CBTableView.m */; };
 		830F8C1C1BEF08FF008DB6FE /* CodeBase.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 830F8C1B1BEF08FF008DB6FE /* CodeBase.podspec */; };
 		83A341451BEF20BB0047A422 /* Examples.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83A341441BEF20BB0047A422 /* Examples.storyboard */; };
+		83A3417B1BEF29740047A422 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A3417A1BEF29740047A422 /* BaseModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,8 @@
 		830F8C1B1BEF08FF008DB6FE /* CodeBase.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CodeBase.podspec; sourceTree = "<group>"; };
 		83A341441BEF20BB0047A422 /* Examples.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Examples.storyboard; sourceTree = "<group>"; };
 		83A341471BEF21040047A422 /* Base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Base.h; sourceTree = "<group>"; };
+		83A341791BEF29740047A422 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		83A3417A1BEF29740047A422 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		D6357BC01AA9874FE1040714 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -203,6 +206,8 @@
 		830F8C031BEF08E6008DB6FE /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				83A341791BEF29740047A422 /* BaseModel.h */,
+				83A3417A1BEF29740047A422 /* BaseModel.m */,
 				830F8C041BEF08E6008DB6FE /* BaseController.h */,
 				830F8C051BEF08E6008DB6FE /* BaseController.m */,
 				830F8C061BEF08E6008DB6FE /* BaseTableViewController.h */,
@@ -449,6 +454,7 @@
 				830F8C1A1BEF08E6008DB6FE /* CBTableView.m in Sources */,
 				830F8BD41BEF083D008DB6FE /* ViewController.m in Sources */,
 				830F8C181BEF08E6008DB6FE /* CBValidation.m in Sources */,
+				83A3417B1BEF29740047A422 /* BaseModel.m in Sources */,
 				830F8C151BEF08E6008DB6FE /* BaseController.m in Sources */,
 				830F8C191BEF08E6008DB6FE /* CBNetworkHelper.m in Sources */,
 				830F8BD11BEF083D008DB6FE /* AppDelegate.m in Sources */,
