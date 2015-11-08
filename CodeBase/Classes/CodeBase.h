@@ -8,6 +8,9 @@
 
 #import "Base.h"
 
+#import "UITableView+Extension.h"
+#import "UITableViewCell+Extension.h"
+
 #import "CBNetworkHelper.h"
 #import "CBTableView.h"
 

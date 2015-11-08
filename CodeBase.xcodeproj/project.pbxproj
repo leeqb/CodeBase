@@ -26,6 +26,8 @@
 		830F8C1C1BEF08FF008DB6FE /* CodeBase.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 830F8C1B1BEF08FF008DB6FE /* CodeBase.podspec */; };
 		83A341451BEF20BB0047A422 /* Examples.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83A341441BEF20BB0047A422 /* Examples.storyboard */; };
 		83A3417B1BEF29740047A422 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A3417A1BEF29740047A422 /* BaseModel.m */; };
+		83A341AF1BEF35100047A422 /* UITableView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A341AE1BEF35100047A422 /* UITableView+Extension.m */; };
+		83A341B21BEF35C80047A422 /* UITableViewCell+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A341B11BEF35C80047A422 /* UITableViewCell+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,10 @@
 		83A341471BEF21040047A422 /* Base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Base.h; sourceTree = "<group>"; };
 		83A341791BEF29740047A422 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
 		83A3417A1BEF29740047A422 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		83A341AD1BEF35100047A422 /* UITableView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Extension.h"; sourceTree = "<group>"; };
+		83A341AE1BEF35100047A422 /* UITableView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Extension.m"; sourceTree = "<group>"; };
+		83A341B01BEF35C80047A422 /* UITableViewCell+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Extension.h"; sourceTree = "<group>"; };
+		83A341B11BEF35C80047A422 /* UITableViewCell+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Extension.m"; sourceTree = "<group>"; };
 		D6357BC01AA9874FE1040714 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -193,10 +199,11 @@
 			isa = PBXGroup;
 			children = (
 				83A341471BEF21040047A422 /* Base.h */,
+				830F8C0C1BEF08E6008DB6FE /* CodeBase.h */,
 				830F8C0A1BEF08E6008DB6FE /* CBValidation.h */,
 				830F8C0B1BEF08E6008DB6FE /* CBValidation.m */,
-				830F8C0C1BEF08E6008DB6FE /* CodeBase.h */,
 				830F8C031BEF08E6008DB6FE /* Base */,
+				83A341AC1BEF34C50047A422 /* Category */,
 				830F8C0D1BEF08E6008DB6FE /* Helper */,
 				830F8C101BEF08E6008DB6FE /* UIKit */,
 			);
@@ -210,10 +217,10 @@
 				83A3417A1BEF29740047A422 /* BaseModel.m */,
 				830F8C041BEF08E6008DB6FE /* BaseController.h */,
 				830F8C051BEF08E6008DB6FE /* BaseController.m */,
-				830F8C061BEF08E6008DB6FE /* BaseTableViewController.h */,
-				830F8C071BEF08E6008DB6FE /* BaseTableViewController.m */,
 				830F8C081BEF08E6008DB6FE /* BaseViewController.h */,
 				830F8C091BEF08E6008DB6FE /* BaseViewController.m */,
+				830F8C061BEF08E6008DB6FE /* BaseTableViewController.h */,
+				830F8C071BEF08E6008DB6FE /* BaseTableViewController.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -257,6 +264,17 @@
 				83A341441BEF20BB0047A422 /* Examples.storyboard */,
 			);
 			path = Examples;
+			sourceTree = "<group>";
+		};
+		83A341AC1BEF34C50047A422 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				83A341AD1BEF35100047A422 /* UITableView+Extension.h */,
+				83A341AE1BEF35100047A422 /* UITableView+Extension.m */,
+				83A341B01BEF35C80047A422 /* UITableViewCell+Extension.h */,
+				83A341B11BEF35C80047A422 /* UITableViewCell+Extension.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		DE5045EB9C73AC1743DE4990 /* Pods */ = {
@@ -462,6 +480,8 @@
 				830F8C161BEF08E6008DB6FE /* BaseTableViewController.m in Sources */,
 				830F8C171BEF08E6008DB6FE /* BaseViewController.m in Sources */,
 				830F8BDA1BEF083D008DB6FE /* CodeBase.xcdatamodeld in Sources */,
+				83A341AF1BEF35100047A422 /* UITableView+Extension.m in Sources */,
+				83A341B21BEF35C80047A422 /* UITableViewCell+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
