@@ -24,6 +24,7 @@
 		830F8C191BEF08E6008DB6FE /* CBNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 830F8C0F1BEF08E6008DB6FE /* CBNetworkHelper.m */; };
 		830F8C1A1BEF08E6008DB6FE /* CBTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 830F8C121BEF08E6008DB6FE /* CBTableView.m */; };
 		830F8C1C1BEF08FF008DB6FE /* CodeBase.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 830F8C1B1BEF08FF008DB6FE /* CodeBase.podspec */; };
+		83A341451BEF20BB0047A422 /* Examples.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83A341441BEF20BB0047A422 /* Examples.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,8 @@
 		830F8C111BEF08E6008DB6FE /* CBTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBTableView.h; sourceTree = "<group>"; };
 		830F8C121BEF08E6008DB6FE /* CBTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBTableView.m; sourceTree = "<group>"; };
 		830F8C1B1BEF08FF008DB6FE /* CodeBase.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CodeBase.podspec; sourceTree = "<group>"; };
+		83A341441BEF20BB0047A422 /* Examples.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Examples.storyboard; sourceTree = "<group>"; };
+		83A341471BEF21040047A422 /* Base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Base.h; sourceTree = "<group>"; };
 		D6357BC01AA9874FE1040714 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -150,6 +153,7 @@
 				830F8BE01BEF083D008DB6FE /* Info.plist */,
 				830F8BD81BEF083D008DB6FE /* CodeBase.xcdatamodeld */,
 				830F8C021BEF08E6008DB6FE /* Classes */,
+				83A341431BEF20980047A422 /* Examples */,
 				830F8C131BEF08E6008DB6FE /* Resources */,
 				830F8BCC1BEF083D008DB6FE /* Supporting Files */,
 			);
@@ -185,6 +189,7 @@
 		830F8C021BEF08E6008DB6FE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				83A341471BEF21040047A422 /* Base.h */,
 				830F8C0A1BEF08E6008DB6FE /* CBValidation.h */,
 				830F8C0B1BEF08E6008DB6FE /* CBValidation.m */,
 				830F8C0C1BEF08E6008DB6FE /* CodeBase.h */,
@@ -239,6 +244,14 @@
 			children = (
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		83A341431BEF20980047A422 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				83A341441BEF20BB0047A422 /* Examples.storyboard */,
+			);
+			path = Examples;
 			sourceTree = "<group>";
 		};
 		DE5045EB9C73AC1743DE4990 /* Pods */ = {
@@ -360,6 +373,7 @@
 				830F8BDC1BEF083D008DB6FE /* Assets.xcassets in Resources */,
 				830F8C1C1BEF08FF008DB6FE /* CodeBase.podspec in Resources */,
 				830F8BD71BEF083D008DB6FE /* Main.storyboard in Resources */,
+				83A341451BEF20BB0047A422 /* Examples.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
