@@ -54,13 +54,13 @@
     self.dataSource = self;
     _tableData = [NSMutableArray array];
     
-    self.header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+    self.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
     }];
     
-    self.footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+    self.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
     }];
     
-    [self.header beginRefreshing];
+    [self.mj_header beginRefreshing];
 }
 
 #pragma mark - UITableViewDataSource
