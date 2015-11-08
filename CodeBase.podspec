@@ -100,7 +100,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec "Category" do |cy|
-    cy.source_files = "CodeBase/Category/Category/*"
+    cy.source_files = "CodeBase/Classes/Category/*"
   end
 
   s.subspec "Helper" do |hp|
