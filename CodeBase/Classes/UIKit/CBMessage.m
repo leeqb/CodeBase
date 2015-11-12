@@ -48,54 +48,50 @@
     return argsArray;
 }
 
-- (void)showLoading:(NSString *)msg, ...
+- (void)showLoading:(NSString *)msg
 {
     [self dismiss];
     _hud = [JGProgressHUD progressHUDWithStyle:JGProgressHUDStyleDark];
-    NSArray *args = [self parseArgs:msg];
-    if([args count] == 0) {
+    if(msg == nil) {
         _hud.textLabel.text = @"加载中...";
     } else {
-        _hud.textLabel.text = args[0];
+        _hud.textLabel.text = msg;
     }
     [_hud showInView:[UIApplication sharedApplication].keyWindow animated:YES];
 }
 
-- (void)showProcessing:(NSString *)msg, ...
+- (void)showProcessing:(NSString *)msg
 {
     [self dismiss];
     _hud = [JGProgressHUD progressHUDWithStyle:JGProgressHUDStyleDark];
-    NSArray *args = [self parseArgs:msg];
-    if([args count] == 0) {
+    if(msg == nil) {
         _hud.textLabel.text = @"处理中...";
     } else {
-        _hud.textLabel.text = args[0];
+        _hud.textLabel.text = msg;
     }
     [_hud showInView:[UIApplication sharedApplication].keyWindow animated:YES];
 }
 
-- (void)showSuccess:(NSString *)msg, ...
+- (void)showSuccess:(NSString *)msg
 {
     [self dismiss];
     _hud = [JGProgressHUD progressHUDWithStyle:JGProgressHUDStyleDark];
-    NSArray *args = [self parseArgs:msg];
-    if([args count] == 0) {
+    if(msg == nil) {
         _hud.textLabel.text = @"操作成功";
     } else {
-        _hud.textLabel.text = args[0];
+        _hud.textLabel.text = msg;
     }
     [_hud showInView:[UIApplication sharedApplication].keyWindow animated:YES];
 }
 
-- (void)showFailed:(NSString *)msg, ...
+- (void)showFailed:(NSString *)msg
 {
     [self dismiss];
     _hud = [JGProgressHUD progressHUDWithStyle:JGProgressHUDStyleDark];
-    NSArray *args = [self parseArgs:msg];
-    if([args count] == 0) {
+    if(msg == nil) {
         _hud.textLabel.text = @"操作失败";
     } else {
-        _hud.textLabel.text = args[0];
+        _hud.textLabel.text = msg;
     }
     [_hud showInView:[UIApplication sharedApplication].keyWindow animated:YES];
 }

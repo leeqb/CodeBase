@@ -13,9 +13,9 @@
 
 + (instancetype)shareInstance;
 
-- (void)showLoading:(NSString *)msg, ...;
-- (void)showProcessing:(NSString *)msg, ...;
-- (void)showSuccess:(NSString *)msg, ...;
-- (void)showFailed:(NSString *)msg, ...;
+- (void)showLoading:(NSString *)msg;
+- (void)showProcessing:(NSString *)msg;
+- (void)showSuccess:(NSString *)msg;
+- (void)showFailed:(NSString *)msg;
 
 @end
