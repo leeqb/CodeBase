@@ -162,5 +162,6 @@ Pod::Spec.new do |s|
   s.dependency 'JSONModel' #Model映射
   s.dependency 'NJKWebViewProgress' #抓取网页加载进度
   s.dependency 'CRToast'
+  s.dependency 'BFKit' #封装了常用操作，很方便
 
 end
