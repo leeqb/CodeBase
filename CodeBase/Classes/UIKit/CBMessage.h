@@ -11,12 +11,11 @@
 
 @interface CBMessage : UIResponder
 
-+ (instancetype)shareInstance;
++ (nonnull instancetype)shareInstance;
 
-- (void)showLoading1:(NSString *)msg;
-- (void)showLoading:(NSString *)msg,...;
-- (void)showProcessing:(NSString *)msg,...;
-- (void)showSuccess:(NSString *)msg,...;
-- (void)showFailed:(NSString *)msg,...;
+- (void)showLoading:(nonnull NSString *)msg, ...;
+- (void)showProcessing:(nonnull NSString *)msg, ...;
+- (void)showSuccess:(nonnull NSString *)msg, ...;
+- (void)showFailed:(nonnull NSString *)msg, ...;
 
 @end

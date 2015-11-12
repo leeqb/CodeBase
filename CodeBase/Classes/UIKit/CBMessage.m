@@ -13,7 +13,7 @@
     JGProgressHUD *_hud;
 }
 
-+ (instancetype)shareInstance
++ (nonnull instancetype)shareInstance
 {
     static CBMessage *instance = nil;
     static dispatch_once_t onceToken;
@@ -23,7 +23,7 @@
     return instance;
 }
 
-- (NSArray *)parseArgs:(id)args,...
+- (NSArray *)parseArgs:(id)args, ...
 {
     NSMutableArray *argsArray = [NSMutableArray array];
     va_list params; //定义一个指向个数可变的参数列表指针;
@@ -48,7 +48,7 @@
     return argsArray;
 }
 
-- (void)showLoading:(NSString *)msg,...
+- (void)showLoading:(NSString *)msg, ...
 {
     [self dismiss];
     _hud = [JGProgressHUD progressHUDWithStyle:JGProgressHUDStyleDark];
@@ -61,7 +61,7 @@
     [_hud showInView:[UIApplication sharedApplication].keyWindow animated:YES];
 }
 
-- (void)showProcessing:(NSString *)msg,...
+- (void)showProcessing:(NSString *)msg, ...
 {
     [self dismiss];
     _hud = [JGProgressHUD progressHUDWithStyle:JGProgressHUDStyleDark];
@@ -74,7 +74,7 @@
     [_hud showInView:[UIApplication sharedApplication].keyWindow animated:YES];
 }
 
-- (void)showSuccess:(NSString *)msg,...
+- (void)showSuccess:(NSString *)msg, ...
 {
     [self dismiss];
     _hud = [JGProgressHUD progressHUDWithStyle:JGProgressHUDStyleDark];
@@ -87,7 +87,7 @@
     [_hud showInView:[UIApplication sharedApplication].keyWindow animated:YES];
 }
 
-- (void)showFailed:(NSString *)msg,...
+- (void)showFailed:(NSString *)msg, ...
 {
     [self dismiss];
     _hud = [JGProgressHUD progressHUDWithStyle:JGProgressHUDStyleDark];
