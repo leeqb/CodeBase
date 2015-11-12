@@ -17,5 +17,6 @@
 - (void)showProcessing;
 - (void)showSuccess;
 - (void)showFailed;
+- (void)dismiss;
 
 @end
