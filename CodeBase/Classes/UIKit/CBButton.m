@@ -57,7 +57,7 @@
     
     if(self.seconds > 0) {
         _leftSeconds = self.seconds;
-        [self setTitle:[NSString stringWithFormat:@"剩余%ld秒", _leftSeconds] forState:UIControlStateNormal];
+        [self setTitle:[NSString stringWithFormat:@"剩余%ld秒", (long)_leftSeconds] forState:UIControlStateNormal];
         _timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timerHandle) userInfo:nil repeats:YES];
     }
 }
@@ -65,7 +65,7 @@
 - (void)timerHandle
 {
     _leftSeconds--;
-    [self setTitle:[NSString stringWithFormat:@"剩余%ld秒", _leftSeconds] forState:UIControlStateNormal];
+    [self setTitle:[NSString stringWithFormat:@"剩余%ld秒", (long)_leftSeconds] forState:UIControlStateNormal];
     
     if(_leftSeconds <= 0) {
         [self setTitle:_originalTitle forState:UIControlStateNormal];
