@@ -11,7 +11,7 @@
 
 @interface CBMessage : UIResponder
 
-+ (instancetype)shareInstance;
++ (CBMessage *)shareInstance;
 
 - (void)showLoading:(NSString *)msg,...;
 - (void)showProcessing:(NSString *)msg,...;

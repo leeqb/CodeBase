@@ -13,7 +13,7 @@
     JGProgressHUD *_hud;
 }
 
-+ (instancetype)shareInstance
++ (CBMessage *)shareInstance
 {
     static CBMessage *instance = nil;
     static dispatch_once_t onceToken;
