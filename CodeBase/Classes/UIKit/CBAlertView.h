@@ -10,7 +10,7 @@
 
 @interface CBAlertView : UIAlertView<UIAlertViewDelegate>
 
-+ (CBAlertView *)shareInstance;
++ (instancetype)shareInstance;
 
 - (void)showMsg:(NSString *)msg;
 

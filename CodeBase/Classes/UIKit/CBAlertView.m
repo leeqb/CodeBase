@@ -15,7 +15,7 @@ typedef void(^AlertBlock)(NSInteger *buttonIndex);
     AlertBlock _alertBlock;
 }
 
-+ (CBAlertView *)shareInstance
++ (instancetype)shareInstance
 {
     static CBAlertView *instance = nil;
     static dispatch_once_t onceToken;
