@@ -2,9 +2,11 @@
 //  CodeBase.h
 //  CodeBase
 //
-//  Created by leeqb on 11/6/15.
+//  Created by leeqb on 11/12/15.
 //  Copyright © 2015 powerlee. All rights reserved.
 //
+
+#import <Foundation/Foundation.h>
 
 #import "Base.h"
 
@@ -23,3 +25,7 @@
 #import "BaseController.h"
 #import "BaseViewController.h"
 #import "BaseTableViewController.h"
+
+@interface CodeBase : NSObject
+
+@end
