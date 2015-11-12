@@ -24,6 +24,7 @@
 		830F8C191BEF08E6008DB6FE /* CBNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 830F8C0F1BEF08E6008DB6FE /* CBNetworkHelper.m */; };
 		830F8C1A1BEF08E6008DB6FE /* CBTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 830F8C121BEF08E6008DB6FE /* CBTableView.m */; };
 		830F8C1C1BEF08FF008DB6FE /* CodeBase.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 830F8C1B1BEF08FF008DB6FE /* CodeBase.podspec */; };
+		832376321BF45A3B00FE054B /* CBAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 832376311BF45A3B00FE054B /* CBAlertView.m */; };
 		83A341451BEF20BB0047A422 /* Examples.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83A341441BEF20BB0047A422 /* Examples.storyboard */; };
 		83A3417B1BEF29740047A422 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A3417A1BEF29740047A422 /* BaseModel.m */; };
 		83A341AF1BEF35100047A422 /* UITableView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A341AE1BEF35100047A422 /* UITableView+Extension.m */; };
@@ -81,6 +82,8 @@
 		830F8C111BEF08E6008DB6FE /* CBTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBTableView.h; sourceTree = "<group>"; };
 		830F8C121BEF08E6008DB6FE /* CBTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBTableView.m; sourceTree = "<group>"; };
 		830F8C1B1BEF08FF008DB6FE /* CodeBase.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CodeBase.podspec; sourceTree = "<group>"; };
+		832376301BF45A3B00FE054B /* CBAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBAlertView.h; sourceTree = "<group>"; };
+		832376311BF45A3B00FE054B /* CBAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBAlertView.m; sourceTree = "<group>"; };
 		83A341441BEF20BB0047A422 /* Examples.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Examples.storyboard; sourceTree = "<group>"; };
 		83A341471BEF21040047A422 /* Base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Base.h; sourceTree = "<group>"; };
 		83A341791BEF29740047A422 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
@@ -239,6 +242,8 @@
 			children = (
 				830F8C111BEF08E6008DB6FE /* CBTableView.h */,
 				830F8C121BEF08E6008DB6FE /* CBTableView.m */,
+				832376301BF45A3B00FE054B /* CBAlertView.h */,
+				832376311BF45A3B00FE054B /* CBAlertView.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -481,6 +486,7 @@
 				830F8C171BEF08E6008DB6FE /* BaseViewController.m in Sources */,
 				830F8BDA1BEF083D008DB6FE /* CodeBase.xcdatamodeld in Sources */,
 				83A341AF1BEF35100047A422 /* UITableView+Extension.m in Sources */,
+				832376321BF45A3B00FE054B /* CBAlertView.m in Sources */,
 				83A341B21BEF35C80047A422 /* UITableViewCell+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
