@@ -18,7 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [[CodeBase shareInstance] startWithConfig:@"Config.plist"];
+    [[CodeBase shareInstance] initConfig:@"Config.plist"];
     
     return YES;
 }

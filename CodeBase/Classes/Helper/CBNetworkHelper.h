@@ -11,6 +11,8 @@
 @interface CBNetworkHelper : NSObject
 
 + (CBNetworkHelper *)shareInstance;
++ (NSString *)getUrl:(NSString *)name;
++ (NSString *)getModuleUrl:(NSString *)module name:(NSString *)name;
 
 // 发起get请求
 - (void)get:(NSString *)url parameters:(NSDictionary *)parameters

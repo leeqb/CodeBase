@@ -20,11 +20,10 @@
     return instance;
 }
 
-- (void)startWithConfig:(NSString *)configFileName
+- (void)initConfig:(NSString *)configName
 {
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:configFileName ofType:nil];
-    NSDictionary *configDict = [NSDictionary dictionaryWithContentsOfFile:filePath];
-    NSLog(@"%@", configDict);
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:configName ofType:nil];
+    _appConfig = [NSDictionary dictionaryWithContentsOfFile:filePath];
 }
 
 @end

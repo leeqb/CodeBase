@@ -20,6 +20,16 @@
     return instance;
 }
 
++ (NSString *)getUrl:(NSString *)name
+{
+    return @"";
+}
+
++ (NSString *)getModuleUrl:(NSString *)module name:(NSString *)name
+{
+    return @"";
+}
+
 - (void)get:(NSString *)url parameters:(NSDictionary *)parameters success:(void (^)(AFHTTPRequestOperation *, id))success failed:(void (^)(AFHTTPRequestOperation *, NSError *))failed finally:(void (^)())finally
 {
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];

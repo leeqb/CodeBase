@@ -28,8 +28,10 @@
 
 @interface CodeBase : NSObject
 
+@property (strong, nonatomic) NSDictionary *appConfig;
+
 + (instancetype)shareInstance;
 
-- (void)startWithConfig:(NSString *)configFileName;
+- (void)initConfig:(NSString *)configName;
 
 @end
