@@ -27,7 +27,7 @@
 		832376321BF45A3B00FE054B /* CBAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 832376311BF45A3B00FE054B /* CBAlertView.m */; };
 		832376351BF460CD00FE054B /* CBMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 832376341BF460CD00FE054B /* CBMessage.m */; };
 		833A5F291BF4A56300404CB4 /* CBValidationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 833A5F281BF4A56300404CB4 /* CBValidationHelper.m */; };
-		833A5F2C1BF4A6C000404CB4 /* CBCountDownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 833A5F2B1BF4A6C000404CB4 /* CBCountDownButton.m */; };
+		833A5F2C1BF4A6C000404CB4 /* CBButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 833A5F2B1BF4A6C000404CB4 /* CBButton.m */; };
 		83A341451BEF20BB0047A422 /* Examples.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83A341441BEF20BB0047A422 /* Examples.storyboard */; };
 		83A3417B1BEF29740047A422 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A3417A1BEF29740047A422 /* BaseModel.m */; };
 		83A341AF1BEF35100047A422 /* UITableView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A341AE1BEF35100047A422 /* UITableView+Extension.m */; };
@@ -91,8 +91,8 @@
 		832376341BF460CD00FE054B /* CBMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBMessage.m; sourceTree = "<group>"; };
 		833A5F271BF4A56300404CB4 /* CBValidationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBValidationHelper.h; sourceTree = "<group>"; };
 		833A5F281BF4A56300404CB4 /* CBValidationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBValidationHelper.m; sourceTree = "<group>"; };
-		833A5F2A1BF4A6C000404CB4 /* CBCountDownButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBCountDownButton.h; sourceTree = "<group>"; };
-		833A5F2B1BF4A6C000404CB4 /* CBCountDownButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBCountDownButton.m; sourceTree = "<group>"; };
+		833A5F2A1BF4A6C000404CB4 /* CBButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBButton.h; sourceTree = "<group>"; };
+		833A5F2B1BF4A6C000404CB4 /* CBButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBButton.m; sourceTree = "<group>"; };
 		83A341441BEF20BB0047A422 /* Examples.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Examples.storyboard; sourceTree = "<group>"; };
 		83A341471BEF21040047A422 /* Base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Base.h; sourceTree = "<group>"; };
 		83A341791BEF29740047A422 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
@@ -257,8 +257,8 @@
 				832376311BF45A3B00FE054B /* CBAlertView.m */,
 				832376331BF460CD00FE054B /* CBMessage.h */,
 				832376341BF460CD00FE054B /* CBMessage.m */,
-				833A5F2A1BF4A6C000404CB4 /* CBCountDownButton.h */,
-				833A5F2B1BF4A6C000404CB4 /* CBCountDownButton.m */,
+				833A5F2A1BF4A6C000404CB4 /* CBButton.h */,
+				833A5F2B1BF4A6C000404CB4 /* CBButton.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -491,7 +491,7 @@
 			files = (
 				830F8C1A1BEF08E6008DB6FE /* CBTableView.m in Sources */,
 				830F8BD41BEF083D008DB6FE /* ViewController.m in Sources */,
-				833A5F2C1BF4A6C000404CB4 /* CBCountDownButton.m in Sources */,
+				833A5F2C1BF4A6C000404CB4 /* CBButton.m in Sources */,
 				832376351BF460CD00FE054B /* CBMessage.m in Sources */,
 				830F8C181BEF08E6008DB6FE /* CBValidation.m in Sources */,
 				83A3417B1BEF29740047A422 /* BaseModel.m in Sources */,

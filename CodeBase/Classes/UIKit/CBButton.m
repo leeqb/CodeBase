@@ -1,14 +1,14 @@
 //
-//  CBCountDownButton.m
+//  CBButton.m
 //  CodeBase
 //
 //  Created by leeqb on 11/12/15.
 //  Copyright © 2015 powerlee. All rights reserved.
 //
 
-#import "CBCountDownButton.h"
+#import "CBButton.h"
 
-@implementation CBCountDownButton
+@implementation CBButton
 {
     NSTimer *_timer;
     UIColor *_originalBgColor;
@@ -48,10 +48,9 @@
 {
     _originalTitle = self.titleLabel.text;
     _originalBgColor = self.backgroundColor;
-    [self addTarget:self action:@selector(startTimer) forControlEvents:UIControlEventTouchUpInside];
 }
 
-- (void)startTimer
+- (void)startCountDownTimer
 {
     self.enabled = NO;
     self.backgroundColor = [UIColor lightGrayColor];

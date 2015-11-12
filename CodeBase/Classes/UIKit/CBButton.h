@@ -1,5 +1,5 @@
 //
-//  CBCountDownButton.h
+//  CBButton.h
 //  CodeBase
 //
 //  Created by leeqb on 11/12/15.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CBCountDownButton : UIButton
+@interface CBButton : UIButton
 
 @property (nonatomic, assign) NSInteger seconds;
+
+- (void)startCountDownTimer;
 
 @end
