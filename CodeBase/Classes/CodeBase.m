@@ -10,4 +10,21 @@
 
 @implementation CodeBase
 
++ (instancetype)shareInstance
+{
+    static CodeBase *instance = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        instance = [CodeBase new];
+    });
+    return instance;
+}
+
+- (void)startWithConfig:(NSString *)configFileName
+{
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:configFileName ofType:nil];
+    NSDictionary *configDict = [NSDictionary dictionaryWithContentsOfFile:filePath];
+    NSLog(@"%@", configDict);
+}
+
 @end

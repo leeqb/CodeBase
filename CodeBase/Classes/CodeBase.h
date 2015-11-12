@@ -28,4 +28,8 @@
 
 @interface CodeBase : NSObject
 
++ (instancetype)shareInstance;
+
+- (void)startWithConfig:(NSString *)configFileName;
+
 @end

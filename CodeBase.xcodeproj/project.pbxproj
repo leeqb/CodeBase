@@ -30,6 +30,7 @@
 		833A5F2C1BF4A6C000404CB4 /* CBButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 833A5F2B1BF4A6C000404CB4 /* CBButton.m */; };
 		833A5F2F1BF4CF1800404CB4 /* CBPListHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 833A5F2E1BF4CF1800404CB4 /* CBPListHelper.m */; };
 		833A5F321BF4CF8F00404CB4 /* CodeBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 833A5F311BF4CF8F00404CB4 /* CodeBase.m */; };
+		833A5F381BF4D08200404CB4 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 833A5F371BF4D08200404CB4 /* Config.plist */; };
 		83A341451BEF20BB0047A422 /* Examples.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83A341441BEF20BB0047A422 /* Examples.storyboard */; };
 		83A3417B1BEF29740047A422 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A3417A1BEF29740047A422 /* BaseModel.m */; };
 		83A341AF1BEF35100047A422 /* UITableView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A341AE1BEF35100047A422 /* UITableView+Extension.m */; };
@@ -98,6 +99,7 @@
 		833A5F2E1BF4CF1800404CB4 /* CBPListHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBPListHelper.m; sourceTree = "<group>"; };
 		833A5F301BF4CF8F00404CB4 /* CodeBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeBase.h; sourceTree = "<group>"; };
 		833A5F311BF4CF8F00404CB4 /* CodeBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeBase.m; sourceTree = "<group>"; };
+		833A5F371BF4D08200404CB4 /* Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
 		83A341441BEF20BB0047A422 /* Examples.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Examples.storyboard; sourceTree = "<group>"; };
 		83A341471BEF21040047A422 /* Base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Base.h; sourceTree = "<group>"; };
 		83A341791BEF29740047A422 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
@@ -179,8 +181,8 @@
 				830F8BE01BEF083D008DB6FE /* Info.plist */,
 				830F8BD81BEF083D008DB6FE /* CodeBase.xcdatamodeld */,
 				830F8C021BEF08E6008DB6FE /* Classes */,
+				833A5F351BF4D08200404CB4 /* Resources */,
 				83A341431BEF20980047A422 /* Examples */,
-				830F8C131BEF08E6008DB6FE /* Resources */,
 				830F8BCC1BEF083D008DB6FE /* Supporting Files */,
 			);
 			path = CodeBase;
@@ -271,19 +273,20 @@
 			path = UIKit;
 			sourceTree = "<group>";
 		};
-		830F8C131BEF08E6008DB6FE /* Resources */ = {
+		833A5F351BF4D08200404CB4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				830F8C141BEF08E6008DB6FE /* Images */,
+				833A5F361BF4D08200404CB4 /* Properties */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		830F8C141BEF08E6008DB6FE /* Images */ = {
+		833A5F361BF4D08200404CB4 /* Properties */ = {
 			isa = PBXGroup;
 			children = (
+				833A5F371BF4D08200404CB4 /* Config.plist */,
 			);
-			path = Images;
+			path = Properties;
 			sourceTree = "<group>";
 		};
 		83A341431BEF20980047A422 /* Examples */ = {
@@ -424,6 +427,7 @@
 				830F8BDC1BEF083D008DB6FE /* Assets.xcassets in Resources */,
 				830F8C1C1BEF08FF008DB6FE /* CodeBase.podspec in Resources */,
 				830F8BD71BEF083D008DB6FE /* Main.storyboard in Resources */,
+				833A5F381BF4D08200404CB4 /* Config.plist in Resources */,
 				83A341451BEF20BB0047A422 /* Examples.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
