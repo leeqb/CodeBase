@@ -7,6 +7,7 @@
 //
 
 #import "CBNetworkHelper.h"
+#import "CodeBase.h"
 
 @implementation CBNetworkHelper
 
@@ -22,7 +23,9 @@
 
 + (NSString *)getUrl:(NSString *)name
 {
-    return @"";
+    NSDictionary *urls = [CodeBase shareInstance].appConfig[@"Urls"];
+    NSString *serverUrl = urls[@"AppServerUrl"];
+    return [NSString stringWithFormat:@"%@/%@", serverUrl, name];
 }
 
 + (NSString *)getModuleUrl:(NSString *)module name:(NSString *)name
