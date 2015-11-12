@@ -26,6 +26,7 @@
 		830F8C1C1BEF08FF008DB6FE /* CodeBase.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 830F8C1B1BEF08FF008DB6FE /* CodeBase.podspec */; };
 		832376321BF45A3B00FE054B /* CBAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 832376311BF45A3B00FE054B /* CBAlertView.m */; };
 		832376351BF460CD00FE054B /* CBMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 832376341BF460CD00FE054B /* CBMessage.m */; };
+		833A5F291BF4A56300404CB4 /* CBValidationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 833A5F281BF4A56300404CB4 /* CBValidationHelper.m */; };
 		83A341451BEF20BB0047A422 /* Examples.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83A341441BEF20BB0047A422 /* Examples.storyboard */; };
 		83A3417B1BEF29740047A422 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A3417A1BEF29740047A422 /* BaseModel.m */; };
 		83A341AF1BEF35100047A422 /* UITableView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A341AE1BEF35100047A422 /* UITableView+Extension.m */; };
@@ -87,6 +88,8 @@
 		832376311BF45A3B00FE054B /* CBAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBAlertView.m; sourceTree = "<group>"; };
 		832376331BF460CD00FE054B /* CBMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBMessage.h; sourceTree = "<group>"; };
 		832376341BF460CD00FE054B /* CBMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBMessage.m; sourceTree = "<group>"; };
+		833A5F271BF4A56300404CB4 /* CBValidationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBValidationHelper.h; sourceTree = "<group>"; };
+		833A5F281BF4A56300404CB4 /* CBValidationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBValidationHelper.m; sourceTree = "<group>"; };
 		83A341441BEF20BB0047A422 /* Examples.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Examples.storyboard; sourceTree = "<group>"; };
 		83A341471BEF21040047A422 /* Base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Base.h; sourceTree = "<group>"; };
 		83A341791BEF29740047A422 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
@@ -236,6 +239,8 @@
 			children = (
 				830F8C0E1BEF08E6008DB6FE /* CBNetworkHelper.h */,
 				830F8C0F1BEF08E6008DB6FE /* CBNetworkHelper.m */,
+				833A5F271BF4A56300404CB4 /* CBValidationHelper.h */,
+				833A5F281BF4A56300404CB4 /* CBValidationHelper.m */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -494,6 +499,7 @@
 				83A341AF1BEF35100047A422 /* UITableView+Extension.m in Sources */,
 				832376321BF45A3B00FE054B /* CBAlertView.m in Sources */,
 				83A341B21BEF35C80047A422 /* UITableViewCell+Extension.m in Sources */,
+				833A5F291BF4A56300404CB4 /* CBValidationHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
