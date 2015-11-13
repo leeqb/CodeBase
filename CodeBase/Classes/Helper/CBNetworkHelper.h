@@ -8,7 +8,13 @@
 
 #import "AFNetworking.h"
 
+typedef NSDictionary*(^BeforeRequestBlock)(NSDictionary*);
+typedef void(^RequestCompleteBlock)(NSDictionary*);
+
 @interface CBNetworkHelper : NSObject
+
+@property (nonatomic, strong) BeforeRequestBlock beforeBlock;
+@property (nonatomic, strong) RequestCompleteBlock completeBlock;
 
 + (CBNetworkHelper *)shareInstance;
 + (NSString *)getUrl:(NSString *)name;

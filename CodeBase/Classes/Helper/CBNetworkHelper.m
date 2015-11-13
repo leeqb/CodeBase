@@ -39,7 +39,12 @@
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     
-    [manager GET:url parameters:parameters success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
+    NSDictionary *finalParams = parameters;
+    if(self.beforeBlock) {
+        finalParams = self.beforeBlock(parameters);
+    }
+    
+    [manager GET:url parameters:finalParams success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
         success(operation, responseObject);
         finally();
     } failure:^(AFHTTPRequestOperation * _Nonnull operation, NSError * _Nonnull error) {
@@ -54,7 +59,12 @@
     //manager.requestSerializer = [AFHTTPRequestSerializer serializer];
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     
-    [manager GET:url parameters:parameters success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
+    NSDictionary *finalParams = parameters;
+    if(self.beforeBlock) {
+        finalParams = self.beforeBlock(parameters);
+    }
+    
+    [manager GET:url parameters:finalParams success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
         success(operation, responseObject);
         finally();
     } failure:^(AFHTTPRequestOperation * _Nonnull operation, NSError * _Nonnull error) {
