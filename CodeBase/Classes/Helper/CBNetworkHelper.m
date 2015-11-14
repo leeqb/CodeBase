@@ -64,7 +64,7 @@
         finalParams = self.beforeBlock(parameters);
     }
     
-    [manager GET:url parameters:finalParams success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
+    [manager POST:url parameters:finalParams success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
         success(operation, responseObject);
         finally();
     } failure:^(AFHTTPRequestOperation * _Nonnull operation, NSError * _Nonnull error) {
