@@ -10,8 +10,6 @@
 
 @interface CBButton : UIButton
 
-@property (nonatomic, assign) NSInteger seconds;
-
-- (void)startCountDownTimer;
+- (void)startCountDown:(NSInteger)seconds;
 
 @end

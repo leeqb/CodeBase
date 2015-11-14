@@ -13,6 +13,8 @@
     NSTimer *_timer;
     UIColor *_originalBgColor;
     NSString *_originalTitle;
+    
+    NSInteger _totalSeconds;
     NSInteger _leftSeconds;
 }
 
@@ -50,13 +52,14 @@
     _originalBgColor = self.backgroundColor;
 }
 
-- (void)startCountDownTimer
+- (void)startCountDown:(NSInteger)seconds
 {
+    _totalSeconds = seconds;
     self.enabled = NO;
     self.backgroundColor = [UIColor lightGrayColor];
     
-    if(self.seconds > 0) {
-        _leftSeconds = self.seconds;
+    if(_totalSeconds > 0) {
+        _leftSeconds = _totalSeconds;
         [self setTitle:[NSString stringWithFormat:@"剩余%ld秒", (long)_leftSeconds] forState:UIControlStateNormal];
         _timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timerHandle) userInfo:nil repeats:YES];
     }
