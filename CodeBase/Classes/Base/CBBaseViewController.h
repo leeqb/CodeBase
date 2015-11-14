@@ -1,13 +1,13 @@
 //
-//  BaseViewController.h
+//  CBBaseViewController.h
 //  CodeBase
 //
 //  Created by leeqb on 11/8/15.
 //  Copyright © 2015 powerlee. All rights reserved.
 //
 
-#import "BaseController.h"
+#import "CBBaseController.h"
 
-@interface BaseViewController : UIViewController
+@interface CBBaseViewController : UIViewController
 
 @end

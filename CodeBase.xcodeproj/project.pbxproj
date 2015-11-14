@@ -17,9 +17,9 @@
 		830F8BDF1BEF083D008DB6FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 830F8BDD1BEF083D008DB6FE /* LaunchScreen.storyboard */; };
 		830F8BEA1BEF083D008DB6FE /* CodeBaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 830F8BE91BEF083D008DB6FE /* CodeBaseTests.m */; };
 		830F8BF51BEF083D008DB6FE /* CodeBaseUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 830F8BF41BEF083D008DB6FE /* CodeBaseUITests.m */; };
-		830F8C151BEF08E6008DB6FE /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 830F8C051BEF08E6008DB6FE /* BaseController.m */; };
-		830F8C161BEF08E6008DB6FE /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 830F8C071BEF08E6008DB6FE /* BaseTableViewController.m */; };
-		830F8C171BEF08E6008DB6FE /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 830F8C091BEF08E6008DB6FE /* BaseViewController.m */; };
+		830F8C151BEF08E6008DB6FE /* CBBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 830F8C051BEF08E6008DB6FE /* CBBaseController.m */; };
+		830F8C161BEF08E6008DB6FE /* CBBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 830F8C071BEF08E6008DB6FE /* CBBaseTableViewController.m */; };
+		830F8C171BEF08E6008DB6FE /* CBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 830F8C091BEF08E6008DB6FE /* CBBaseViewController.m */; };
 		830F8C181BEF08E6008DB6FE /* CBValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 830F8C0B1BEF08E6008DB6FE /* CBValidation.m */; };
 		830F8C191BEF08E6008DB6FE /* CBNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 830F8C0F1BEF08E6008DB6FE /* CBNetworkHelper.m */; };
 		830F8C1A1BEF08E6008DB6FE /* CBTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 830F8C121BEF08E6008DB6FE /* CBTableView.m */; };
@@ -32,7 +32,7 @@
 		833A5F321BF4CF8F00404CB4 /* CodeBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 833A5F311BF4CF8F00404CB4 /* CodeBase.m */; };
 		833A5F381BF4D08200404CB4 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 833A5F371BF4D08200404CB4 /* Config.plist */; };
 		83A341451BEF20BB0047A422 /* Examples.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83A341441BEF20BB0047A422 /* Examples.storyboard */; };
-		83A3417B1BEF29740047A422 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A3417A1BEF29740047A422 /* BaseModel.m */; };
+		83A3417B1BEF29740047A422 /* CBBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A3417A1BEF29740047A422 /* CBBaseModel.m */; };
 		83A341AF1BEF35100047A422 /* UITableView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A341AE1BEF35100047A422 /* UITableView+Extension.m */; };
 		83A341B21BEF35C80047A422 /* UITableViewCell+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A341B11BEF35C80047A422 /* UITableViewCell+Extension.m */; };
 /* End PBXBuildFile section */
@@ -74,12 +74,12 @@
 		830F8BF01BEF083D008DB6FE /* CodeBaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeBaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		830F8BF41BEF083D008DB6FE /* CodeBaseUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeBaseUITests.m; sourceTree = "<group>"; };
 		830F8BF61BEF083D008DB6FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		830F8C041BEF08E6008DB6FE /* BaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseController.h; sourceTree = "<group>"; };
-		830F8C051BEF08E6008DB6FE /* BaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseController.m; sourceTree = "<group>"; };
-		830F8C061BEF08E6008DB6FE /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
-		830F8C071BEF08E6008DB6FE /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
-		830F8C081BEF08E6008DB6FE /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
-		830F8C091BEF08E6008DB6FE /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		830F8C041BEF08E6008DB6FE /* CBBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBBaseController.h; sourceTree = "<group>"; };
+		830F8C051BEF08E6008DB6FE /* CBBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBBaseController.m; sourceTree = "<group>"; };
+		830F8C061BEF08E6008DB6FE /* CBBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBBaseTableViewController.h; sourceTree = "<group>"; };
+		830F8C071BEF08E6008DB6FE /* CBBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBBaseTableViewController.m; sourceTree = "<group>"; };
+		830F8C081BEF08E6008DB6FE /* CBBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBBaseViewController.h; sourceTree = "<group>"; };
+		830F8C091BEF08E6008DB6FE /* CBBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBBaseViewController.m; sourceTree = "<group>"; };
 		830F8C0A1BEF08E6008DB6FE /* CBValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBValidation.h; sourceTree = "<group>"; };
 		830F8C0B1BEF08E6008DB6FE /* CBValidation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBValidation.m; sourceTree = "<group>"; };
 		830F8C0E1BEF08E6008DB6FE /* CBNetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBNetworkHelper.h; sourceTree = "<group>"; };
@@ -102,8 +102,8 @@
 		833A5F371BF4D08200404CB4 /* Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
 		83A341441BEF20BB0047A422 /* Examples.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Examples.storyboard; sourceTree = "<group>"; };
 		83A341471BEF21040047A422 /* Base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Base.h; sourceTree = "<group>"; };
-		83A341791BEF29740047A422 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
-		83A3417A1BEF29740047A422 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		83A341791BEF29740047A422 /* CBBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBBaseModel.h; sourceTree = "<group>"; };
+		83A3417A1BEF29740047A422 /* CBBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBBaseModel.m; sourceTree = "<group>"; };
 		83A341AD1BEF35100047A422 /* UITableView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Extension.h"; sourceTree = "<group>"; };
 		83A341AE1BEF35100047A422 /* UITableView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Extension.m"; sourceTree = "<group>"; };
 		83A341B01BEF35C80047A422 /* UITableViewCell+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Extension.h"; sourceTree = "<group>"; };
@@ -233,14 +233,14 @@
 		830F8C031BEF08E6008DB6FE /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				83A341791BEF29740047A422 /* BaseModel.h */,
-				83A3417A1BEF29740047A422 /* BaseModel.m */,
-				830F8C041BEF08E6008DB6FE /* BaseController.h */,
-				830F8C051BEF08E6008DB6FE /* BaseController.m */,
-				830F8C081BEF08E6008DB6FE /* BaseViewController.h */,
-				830F8C091BEF08E6008DB6FE /* BaseViewController.m */,
-				830F8C061BEF08E6008DB6FE /* BaseTableViewController.h */,
-				830F8C071BEF08E6008DB6FE /* BaseTableViewController.m */,
+				83A341791BEF29740047A422 /* CBBaseModel.h */,
+				83A3417A1BEF29740047A422 /* CBBaseModel.m */,
+				830F8C041BEF08E6008DB6FE /* CBBaseController.h */,
+				830F8C051BEF08E6008DB6FE /* CBBaseController.m */,
+				830F8C081BEF08E6008DB6FE /* CBBaseViewController.h */,
+				830F8C091BEF08E6008DB6FE /* CBBaseViewController.m */,
+				830F8C061BEF08E6008DB6FE /* CBBaseTableViewController.h */,
+				830F8C071BEF08E6008DB6FE /* CBBaseTableViewController.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -507,14 +507,14 @@
 				833A5F2C1BF4A6C000404CB4 /* CBButton.m in Sources */,
 				832376351BF460CD00FE054B /* CBMessage.m in Sources */,
 				830F8C181BEF08E6008DB6FE /* CBValidation.m in Sources */,
-				83A3417B1BEF29740047A422 /* BaseModel.m in Sources */,
-				830F8C151BEF08E6008DB6FE /* BaseController.m in Sources */,
+				83A3417B1BEF29740047A422 /* CBBaseModel.m in Sources */,
+				830F8C151BEF08E6008DB6FE /* CBBaseController.m in Sources */,
 				830F8C191BEF08E6008DB6FE /* CBNetworkHelper.m in Sources */,
 				830F8BD11BEF083D008DB6FE /* AppDelegate.m in Sources */,
 				830F8BCE1BEF083D008DB6FE /* main.m in Sources */,
-				830F8C161BEF08E6008DB6FE /* BaseTableViewController.m in Sources */,
+				830F8C161BEF08E6008DB6FE /* CBBaseTableViewController.m in Sources */,
 				833A5F2F1BF4CF1800404CB4 /* CBPListHelper.m in Sources */,
-				830F8C171BEF08E6008DB6FE /* BaseViewController.m in Sources */,
+				830F8C171BEF08E6008DB6FE /* CBBaseViewController.m in Sources */,
 				830F8BDA1BEF083D008DB6FE /* CodeBase.xcdatamodeld in Sources */,
 				83A341AF1BEF35100047A422 /* UITableView+Extension.m in Sources */,
 				832376321BF45A3B00FE054B /* CBAlertView.m in Sources */,

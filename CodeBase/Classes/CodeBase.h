@@ -21,10 +21,10 @@
 #import "CBTableView.h"
 #import "CBButton.h"
 
-#import "BaseModel.h"
-#import "BaseController.h"
-#import "BaseViewController.h"
-#import "BaseTableViewController.h"
+#import "CBBaseModel.h"
+#import "CBBaseController.h"
+#import "CBBaseViewController.h"
+#import "CBBaseTableViewController.h"
 
 @interface CodeBase : NSObject
 

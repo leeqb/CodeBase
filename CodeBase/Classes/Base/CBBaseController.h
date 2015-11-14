@@ -1,5 +1,5 @@
 //
-//  BaseController.h
+//  CBBaseController.h
 //  CodeBase
 //
 //  Created by leeqb on 11/8/15.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BaseController : UIResponder
+@interface CBBaseController : UIResponder
 
-+ (void)removeBackTitle:(UINavigationItem *)navItem;
++ (void)removeBackTitle:(UIViewController *)vc;
 
 @end
