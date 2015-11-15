@@ -163,5 +163,6 @@ Pod::Spec.new do |s|
   s.dependency 'NJKWebViewProgress' #抓取网页加载进度
   s.dependency 'CRToast'
   s.dependency 'BFKit' #封装了常用操作，很方便
+  s.dependency 'MIHCrypto' #加密解密
 
 end
