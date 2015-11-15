@@ -33,6 +33,14 @@
     return @"";
 }
 
+- (NSDictionary *)handleResult:(id)responseObject {
+    NSDictionary *ret = responseObject;
+    if(self.afterBlock) {
+        ret = self.afterBlock(responseObject);
+    }
+    return ret;
+}
+
 - (void)get:(NSString *)url parameters:(NSDictionary *)parameters success:(void (^)(AFHTTPRequestOperation *, id))success failed:(void (^)(AFHTTPRequestOperation *, NSError *))failed finally:(void (^)())finally
 {
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
@@ -46,7 +54,8 @@
     }
     
     [manager GET:url parameters:finalParams success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
-        success(operation, responseObject);
+        NSDictionary *ret = [self handleResult:responseObject];
+        success(operation, ret);
         finally();
     } failure:^(AFHTTPRequestOperation * _Nonnull operation, NSError * _Nonnull error) {
         failed(operation, error);
@@ -67,7 +76,8 @@
     }
     
     [manager POST:url parameters:finalParams success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
-        success(operation, responseObject);
+        NSDictionary *ret = [self handleResult:responseObject];
+        success(operation, ret);
         finally();
     } failure:^(AFHTTPRequestOperation * _Nonnull operation, NSError * _Nonnull error) {
         failed(operation, error);
