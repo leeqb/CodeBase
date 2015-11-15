@@ -33,6 +33,16 @@
     return @"";
 }
 
+// 封装请求参数
+- (NSDictionary *)handleRequest:(NSDictionary *)requestParams {
+    NSDictionary *finalParams = requestParams;
+    if(self.beforeBlock) {
+        finalParams = self.beforeBlock(requestParams);
+    }
+    return finalParams;
+}
+
+// 封装返回结果
 - (NSDictionary *)handleResult:(id)responseObject {
     NSDictionary *ret = responseObject;
     if(self.afterBlock) {
@@ -48,11 +58,7 @@
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/plain", @"text/html", nil];
     
-    NSDictionary *finalParams = parameters;
-    if(self.beforeBlock) {
-        finalParams = self.beforeBlock(parameters);
-    }
-    
+    NSDictionary *finalParams = [self handleRequest:parameters];
     [manager GET:url parameters:finalParams success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
         NSDictionary *ret = [self handleResult:responseObject];
         success(operation, ret);
@@ -67,14 +73,8 @@
 {
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];
-    //manager.responseSerializer = [AFHTTPResponseSerializer serializer];
-    //manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/plain", @"text/html", nil];
     
-    NSDictionary *finalParams = parameters;
-    if(self.beforeBlock) {
-        finalParams = self.beforeBlock(parameters);
-    }
-    
+    NSDictionary *finalParams = [self handleRequest:parameters];
     [manager POST:url parameters:finalParams success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
         NSDictionary *ret = [self handleResult:responseObject];
         success(operation, ret);
