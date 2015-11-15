@@ -32,4 +32,6 @@ typedef NSDictionary*(^AfterRequestBlock)(NSDictionary*);
      failed:(void(^)(AFHTTPRequestOperation *operation, NSError *error))failed
     finally:(void(^)())finally;
 
+- (void)postWithBody:(NSString *)url body:(id)bdoy success:(void (^)(AFHTTPRequestOperation *, id))success failed:(void (^)(AFHTTPRequestOperation *, NSError *))failed finally:(void (^)())finally;
+
 @end
