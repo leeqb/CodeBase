@@ -86,4 +86,21 @@
     }];
 }
 
+- (void)postWithBody:(NSString *)url body:(id)bdoy success:(void (^)(AFHTTPRequestOperation *, id))success failed:(void (^)(AFHTTPRequestOperation *, NSError *))failed finally:(void (^)())finally
+{
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    manager.requestSerializer = [AFHTTPRequestSerializer serializer];
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/plain", @"text/html", nil];
+    
+    //NSDictionary *finalParams = [self handleRequest:parameters];
+    [manager POST:url parameters:bdoy success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
+        NSDictionary *ret = [self handleResult:responseObject];
+        success(operation, ret);
+        finally();
+    } failure:^(AFHTTPRequestOperation * _Nonnull operation, NSError * _Nonnull error) {
+        failed(operation, error);
+        finally();
+    }];
+}
+
 @end

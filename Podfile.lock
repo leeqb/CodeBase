@@ -20,6 +20,7 @@ PODS:
   - AFNetworking/UIKit (2.6.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - BFKit (1.8.0)
   - CRToast (0.0.9)
   - FMDB (2.5):
     - FMDB/standard (= 2.5)
@@ -30,6 +31,28 @@ PODS:
   - JSBadgeView (1.4.1)
   - JSONModel (1.1.2)
   - Masonry (0.6.3)
+  - MIHCrypto (0.4.0):
+    - MIHCrypto/AES (= 0.4.0)
+    - MIHCrypto/Core (= 0.4.0)
+    - MIHCrypto/DES (= 0.4.0)
+    - MIHCrypto/Mathematics (= 0.4.0)
+    - MIHCrypto/MD5 (= 0.4.0)
+    - MIHCrypto/RSA (= 0.4.0)
+    - MIHCrypto/SHA (= 0.4.0)
+  - MIHCrypto/AES (0.4.0):
+    - MIHCrypto/Core
+  - MIHCrypto/Core (0.4.0):
+    - OpenSSL-Universal (~> 1.0.1.l)
+  - MIHCrypto/DES (0.4.0):
+    - MIHCrypto/Core
+  - MIHCrypto/Mathematics (0.4.0):
+    - MIHCrypto/Core
+  - MIHCrypto/MD5 (0.4.0):
+    - MIHCrypto/Core
+  - MIHCrypto/RSA (0.4.0):
+    - MIHCrypto/Core
+  - MIHCrypto/SHA (0.4.0):
+    - MIHCrypto/Core
   - MJRefresh (3.0.2)
   - NJKWebViewProgress (0.2.3):
     - NJKWebViewProgress/Core (= 0.2.3)
@@ -37,6 +60,7 @@ PODS:
   - NJKWebViewProgress/Core (0.2.3)
   - NJKWebViewProgress/ProgressView (0.2.3)
   - ObjectiveSugar (1.1.0)
+  - OpenSSL-Universal (1.0.1.p)
   - pop (1.0.8)
   - SDCycleScrollView (1.3)
   - SDWebImage (3.7.3):
@@ -47,12 +71,14 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - BFKit
   - CRToast
   - FMDB
   - JGProgressHUD
   - JSBadgeView
   - JSONModel
   - Masonry
+  - MIHCrypto
   - MJRefresh
   - NJKWebViewProgress
   - ObjectiveSugar
@@ -64,15 +90,18 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  BFKit: f9edb431d57bcd01568a5aebbfae2cd9976f03c2
   CRToast: 5a78c22b921c5ed3487488af605bc403a9c92fed
   FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
   JGProgressHUD: 153053a21d81208cb5f659691996bcefce6a9885
   JSBadgeView: 3861ddee41094284d9468e6d0af5107f703aaac5
   JSONModel: 216584d0311b053ff714f1d6cb700dbf890847bc
   Masonry: ff105a956abcd19a618b2028b121cb638d7a8e2f
+  MIHCrypto: 381595fd47292b9564aabb71fc92e5ac51a07fa2
   MJRefresh: 85377dc8c70395cf329e102a5c55505ef387c2e1
   NJKWebViewProgress: f481fd424cb5ecc27eacae11b5397db92fba9a4d
   ObjectiveSugar: a6a25f23d657c19df0a0b972466d5b5ca9f5295c
+  OpenSSL-Universal: 8746d6f33874f85a30f5be1dc6e696d1b2ebcf01
   pop: bb773ae2c791ca2629de13b347e7a8b450fa6a57
   SDCycleScrollView: 90e43636fcc8e6a7f74e8b64d87418a8e96549b4
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
