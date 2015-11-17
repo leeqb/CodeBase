@@ -32,6 +32,7 @@
 		833A5F321BF4CF8F00404CB4 /* CodeBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 833A5F311BF4CF8F00404CB4 /* CodeBase.m */; };
 		833A5F381BF4D08200404CB4 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 833A5F371BF4D08200404CB4 /* Config.plist */; };
 		834D97651BF82A780074BE09 /* CBView.m in Sources */ = {isa = PBXBuildFile; fileRef = 834D97641BF82A780074BE09 /* CBView.m */; };
+		838748061BFB9D6C00571C6A /* CBLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 838748051BFB9D6C00571C6A /* CBLabel.m */; };
 		83A341451BEF20BB0047A422 /* Examples.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83A341441BEF20BB0047A422 /* Examples.storyboard */; };
 		83A3417B1BEF29740047A422 /* CBBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A3417A1BEF29740047A422 /* CBBaseModel.m */; };
 		83A341AF1BEF35100047A422 /* UITableView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A341AE1BEF35100047A422 /* UITableView+Extension.m */; };
@@ -103,6 +104,8 @@
 		833A5F371BF4D08200404CB4 /* Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
 		834D97631BF82A780074BE09 /* CBView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBView.h; sourceTree = "<group>"; };
 		834D97641BF82A780074BE09 /* CBView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBView.m; sourceTree = "<group>"; };
+		838748041BFB9D6C00571C6A /* CBLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBLabel.h; sourceTree = "<group>"; };
+		838748051BFB9D6C00571C6A /* CBLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBLabel.m; sourceTree = "<group>"; };
 		83A341441BEF20BB0047A422 /* Examples.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Examples.storyboard; sourceTree = "<group>"; };
 		83A341471BEF21040047A422 /* Base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Base.h; sourceTree = "<group>"; };
 		83A341791BEF29740047A422 /* CBBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBBaseModel.h; sourceTree = "<group>"; };
@@ -274,6 +277,8 @@
 				833A5F2B1BF4A6C000404CB4 /* CBButton.m */,
 				834D97631BF82A780074BE09 /* CBView.h */,
 				834D97641BF82A780074BE09 /* CBView.m */,
+				838748041BFB9D6C00571C6A /* CBLabel.h */,
+				838748051BFB9D6C00571C6A /* CBLabel.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -515,6 +520,7 @@
 				83A3417B1BEF29740047A422 /* CBBaseModel.m in Sources */,
 				830F8C151BEF08E6008DB6FE /* CBBaseController.m in Sources */,
 				830F8C191BEF08E6008DB6FE /* CBNetworkHelper.m in Sources */,
+				838748061BFB9D6C00571C6A /* CBLabel.m in Sources */,
 				830F8BD11BEF083D008DB6FE /* AppDelegate.m in Sources */,
 				830F8BCE1BEF083D008DB6FE /* main.m in Sources */,
 				830F8C161BEF08E6008DB6FE /* CBBaseTableViewController.m in Sources */,

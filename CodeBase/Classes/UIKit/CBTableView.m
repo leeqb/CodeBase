@@ -47,6 +47,12 @@
     return self;
 }
 
+#pragma mark - Setter
+- (void)setDataUrl:(NSString *)dataUrl
+{
+    _dataUrl = dataUrl;
+}
+
 #pragma mark - Private Methods
 - (void)initSelf
 {

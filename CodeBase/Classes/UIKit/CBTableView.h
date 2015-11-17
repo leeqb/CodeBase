@@ -24,4 +24,8 @@
 @property (assign, nonatomic) id<CBTableViewDelegate> custDelegate;
 @property (strong, nonatomic) NSMutableArray *tableData;
 
+@property (assign, nonatomic) NSInteger pageIndex;
+@property (assign, nonatomic) NSInteger pageSize;
+@property (strong, nonatomic) NSString *dataUrl;
+
 @end
