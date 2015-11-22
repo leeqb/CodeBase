@@ -27,7 +27,7 @@
 		832376321BF45A3B00FE054B /* CBAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 832376311BF45A3B00FE054B /* CBAlertView.m */; };
 		832376351BF460CD00FE054B /* CBMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 832376341BF460CD00FE054B /* CBMessage.m */; };
 		833A5F291BF4A56300404CB4 /* CBValidationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 833A5F281BF4A56300404CB4 /* CBValidationHelper.m */; };
-		833A5F2C1BF4A6C000404CB4 /* CBButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 833A5F2B1BF4A6C000404CB4 /* CBButton.m */; };
+		833A5F2C1BF4A6C000404CB4 /* CBCountDownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 833A5F2B1BF4A6C000404CB4 /* CBCountDownButton.m */; };
 		833A5F2F1BF4CF1800404CB4 /* CBPListHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 833A5F2E1BF4CF1800404CB4 /* CBPListHelper.m */; };
 		833A5F321BF4CF8F00404CB4 /* CodeBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 833A5F311BF4CF8F00404CB4 /* CodeBase.m */; };
 		833A5F381BF4D08200404CB4 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 833A5F371BF4D08200404CB4 /* Config.plist */; };
@@ -37,6 +37,7 @@
 		83A3417B1BEF29740047A422 /* CBBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A3417A1BEF29740047A422 /* CBBaseModel.m */; };
 		83A341AF1BEF35100047A422 /* UITableView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A341AE1BEF35100047A422 /* UITableView+Extension.m */; };
 		83A341B21BEF35C80047A422 /* UITableViewCell+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A341B11BEF35C80047A422 /* UITableViewCell+Extension.m */; };
+		83B1DF781C0153D2005FA743 /* CBButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B1DF771C0153D2005FA743 /* CBButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,8 +96,8 @@
 		832376341BF460CD00FE054B /* CBMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBMessage.m; sourceTree = "<group>"; };
 		833A5F271BF4A56300404CB4 /* CBValidationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBValidationHelper.h; sourceTree = "<group>"; };
 		833A5F281BF4A56300404CB4 /* CBValidationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBValidationHelper.m; sourceTree = "<group>"; };
-		833A5F2A1BF4A6C000404CB4 /* CBButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBButton.h; sourceTree = "<group>"; };
-		833A5F2B1BF4A6C000404CB4 /* CBButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBButton.m; sourceTree = "<group>"; };
+		833A5F2A1BF4A6C000404CB4 /* CBCountDownButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBCountDownButton.h; sourceTree = "<group>"; };
+		833A5F2B1BF4A6C000404CB4 /* CBCountDownButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBCountDownButton.m; sourceTree = "<group>"; };
 		833A5F2D1BF4CF1800404CB4 /* CBPListHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBPListHelper.h; sourceTree = "<group>"; };
 		833A5F2E1BF4CF1800404CB4 /* CBPListHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBPListHelper.m; sourceTree = "<group>"; };
 		833A5F301BF4CF8F00404CB4 /* CodeBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeBase.h; sourceTree = "<group>"; };
@@ -114,6 +115,8 @@
 		83A341AE1BEF35100047A422 /* UITableView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Extension.m"; sourceTree = "<group>"; };
 		83A341B01BEF35C80047A422 /* UITableViewCell+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Extension.h"; sourceTree = "<group>"; };
 		83A341B11BEF35C80047A422 /* UITableViewCell+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Extension.m"; sourceTree = "<group>"; };
+		83B1DF761C0153D2005FA743 /* CBButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBButton.h; sourceTree = "<group>"; };
+		83B1DF771C0153D2005FA743 /* CBButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBButton.m; sourceTree = "<group>"; };
 		D6357BC01AA9874FE1040714 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -273,8 +276,10 @@
 				832376311BF45A3B00FE054B /* CBAlertView.m */,
 				832376331BF460CD00FE054B /* CBMessage.h */,
 				832376341BF460CD00FE054B /* CBMessage.m */,
-				833A5F2A1BF4A6C000404CB4 /* CBButton.h */,
-				833A5F2B1BF4A6C000404CB4 /* CBButton.m */,
+				833A5F2A1BF4A6C000404CB4 /* CBCountDownButton.h */,
+				833A5F2B1BF4A6C000404CB4 /* CBCountDownButton.m */,
+				83B1DF761C0153D2005FA743 /* CBButton.h */,
+				83B1DF771C0153D2005FA743 /* CBButton.m */,
 				834D97631BF82A780074BE09 /* CBView.h */,
 				834D97641BF82A780074BE09 /* CBView.m */,
 				838748041BFB9D6C00571C6A /* CBLabel.h */,
@@ -514,7 +519,7 @@
 				830F8C1A1BEF08E6008DB6FE /* CBTableView.m in Sources */,
 				833A5F321BF4CF8F00404CB4 /* CodeBase.m in Sources */,
 				830F8BD41BEF083D008DB6FE /* ViewController.m in Sources */,
-				833A5F2C1BF4A6C000404CB4 /* CBButton.m in Sources */,
+				833A5F2C1BF4A6C000404CB4 /* CBCountDownButton.m in Sources */,
 				832376351BF460CD00FE054B /* CBMessage.m in Sources */,
 				830F8C181BEF08E6008DB6FE /* CBValidation.m in Sources */,
 				83A3417B1BEF29740047A422 /* CBBaseModel.m in Sources */,
@@ -527,6 +532,7 @@
 				833A5F2F1BF4CF1800404CB4 /* CBPListHelper.m in Sources */,
 				830F8C171BEF08E6008DB6FE /* CBBaseViewController.m in Sources */,
 				830F8BDA1BEF083D008DB6FE /* CodeBase.xcdatamodeld in Sources */,
+				83B1DF781C0153D2005FA743 /* CBButton.m in Sources */,
 				83A341AF1BEF35100047A422 /* UITableView+Extension.m in Sources */,
 				832376321BF45A3B00FE054B /* CBAlertView.m in Sources */,
 				83A341B21BEF35C80047A422 /* UITableViewCell+Extension.m in Sources */,

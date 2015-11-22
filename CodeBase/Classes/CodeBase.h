@@ -20,6 +20,7 @@
 #import "CBMessage.h"
 #import "CBTableView.h"
 #import "CBButton.h"
+#import "CBCountDownButton.h"
 
 #import "CBBaseModel.h"
 #import "CBBaseController.h"
