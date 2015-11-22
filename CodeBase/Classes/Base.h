@@ -13,3 +13,5 @@
 // 分辨率宽度、高度
 #define RESOLUTION_WIDTH    [[UIScreen mainScreen] currentMode].size.width
 #define RESOLUTION_HEIGHT   [[UIScreen mainScreen] currentMode].size.height
+
+#import <UIImageView+WebCache.h>
