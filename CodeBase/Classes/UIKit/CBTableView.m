@@ -83,6 +83,13 @@
     }
     
     NSLog(@"无请求地址");
+    if(self.mj_header) {
+        [self.mj_header endRefreshing];
+    }
+    
+    if(self.mj_footer) {
+        [self.mj_footer endRefreshing];
+    }
 }
 
 
