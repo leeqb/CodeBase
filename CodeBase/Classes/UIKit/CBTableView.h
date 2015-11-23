@@ -15,10 +15,9 @@
 
 @optional
 - (NSArray *)handleResponseData:(id)responseObject;
-
-@required
 - (NSInteger)tableView:(CBTableView *)tableView numberOfRowsInSection:(NSInteger)section;
 
+@required
 - (UITableViewCell *)tableView:(CBTableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
 
 @end
