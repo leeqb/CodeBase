@@ -127,6 +127,11 @@ static NSString *g_pageSizeKey = @"pagesize";
 }
 
 #pragma mark - UITableViewDataSource
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.tableData.count;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if(self.custDelegate && [self.custDelegate respondsToSelector:@selector(tableView:cellForRowAtIndexPath:)]) {
