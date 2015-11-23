@@ -63,18 +63,6 @@ static NSString *g_pageSizeKey = @"pagesize";
     UIView *footerView = [UIView new];
     footerView.backgroundColor = [UIColor whiteColor];
     self.tableFooterView = footerView;
-    
-    self.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
-        _pageIndex = 0;
-        [self requestDataFromServer];
-    }];
-    
-    self.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
-        _pageIndex++;
-        [self requestDataFromServer];
-    }];
-    
-    //[self.mj_header beginRefreshing];
 }
 
 #pragma mark - Setter
@@ -91,6 +79,23 @@ static NSString *g_pageSizeKey = @"pagesize";
 + (void)setGlobalPageSizeKey:(NSString *)key
 {
     g_pageSizeKey = key;
+}
+
+- (void)setPageable:(BOOL)pageable
+{
+    _pageable = pageable;
+    
+    if(_pageable) {
+        self.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+            _pageIndex = 0;
+            [self requestDataFromServer];
+        }];
+        
+        self.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+            _pageIndex++;
+            [self requestDataFromServer];
+        }];
+    }
 }
 
 #pragma mark - Public Methods
