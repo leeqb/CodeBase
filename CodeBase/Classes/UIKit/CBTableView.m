@@ -103,6 +103,9 @@ static NSString *g_pageSizeKey = @"pagesize";
             finalParams[g_pageSizeKey] = @(g_pageSize);
         }
         
+        print(self.requestUrl)
+        print(finalParams)
+        
         [[CBNetworkHelper shareInstance] post:self.requestUrl parameters:finalParams success:^(AFHTTPRequestOperation *operation, id responseObject) {
             if(self.custDelegate && [self.custDelegate respondsToSelector:@selector(handleResponseData:)]) {
                 [_tableData addObjectsFromArray:[self.custDelegate handleResponseData:responseObject]];
