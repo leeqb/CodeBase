@@ -13,8 +13,10 @@
 
 @protocol CBTableViewDelegate <UITableViewDelegate>
 
+@optional
 - (NSArray *)handleResponseData:(id)responseObject;
 
+@required
 - (NSInteger)tableView:(CBTableView *)tableView numberOfRowsInSection:(NSInteger)section;
 
 - (UITableViewCell *)tableView:(CBTableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
