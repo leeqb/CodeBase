@@ -7,6 +7,7 @@
 //
 
 #import "CBTableView.h"
+#import "CBNetworkHelper.h"
 
 @implementation CBTableView
 
@@ -47,11 +48,43 @@
     return self;
 }
 
-#pragma mark - Setter
-- (void)setDataUrl:(NSString *)dataUrl
+#pragma mark - Public Methods
+- (void)requestDataFromServer
 {
-    _dataUrl = dataUrl;
+    if(self.requestUrl) {
+        NSMutableDictionary *finalParams = [self.requestParams mutableCopy];
+        if(self.pageIndexKey) {
+            finalParams[self.pageIndexKey] = @(self.pageIndex);
+        }
+        
+        if(self.pageSizeKey) {
+            if(self.pageSize > 0) {
+                finalParams[self.pageSizeKey] = @(self.pageSize);
+            } else {
+                finalParams[self.pageSizeKey] = @(10);
+            }
+        }
+        
+        [[CBNetworkHelper shareInstance] post:self.requestUrl parameters:finalParams success:^(AFHTTPRequestOperation *operation, id responseObject) {
+            if(self.custDelegate && [self.custDelegate respondsToSelector:@selector(handleResponseData:)]) {
+                [_tableData addObjectsFromArray:[self.custDelegate handleResponseData:responseObject]];
+            }
+            [self reloadData];
+        } failed:^(AFHTTPRequestOperation *operation, NSError *error) {
+        } finally:^{
+            if(self.mj_header) {
+                [self.mj_header endRefreshing];
+            }
+            
+            if(self.mj_footer) {
+                [self.mj_footer endRefreshing];
+            }
+        }];
+    }
+    
+    NSLog(@"无请求地址");
 }
+
 
 #pragma mark - Private Methods
 - (void)initSelf
@@ -61,12 +94,16 @@
     _tableData = [NSMutableArray array];
     
     self.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        _pageIndex = 0;
+        [self requestDataFromServer];
     }];
     
     self.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+        _pageIndex++;
+        [self requestDataFromServer];
     }];
     
-    [self.mj_header beginRefreshing];
+    //[self.mj_header beginRefreshing];
 }
 
 #pragma mark - UITableViewDataSource

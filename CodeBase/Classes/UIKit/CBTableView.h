@@ -13,6 +13,8 @@
 
 @protocol CBTableViewDelegate <UITableViewDelegate>
 
+- (NSArray *)handleResponseData:(id)responseObject;
+
 - (NSInteger)tableView:(CBTableView *)tableView numberOfRowsInSection:(NSInteger)section;
 
 - (UITableViewCell *)tableView:(CBTableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
@@ -22,10 +24,16 @@
 @interface CBTableView : UITableView<UITableViewDelegate, UITableViewDataSource>
 
 @property (assign, nonatomic) id<CBTableViewDelegate> custDelegate;
-@property (strong, nonatomic) NSMutableArray *tableData;
 
-@property (assign, nonatomic) NSInteger pageIndex;
+@property (readonly, nonatomic) NSMutableArray *tableData;
+@property (readonly, nonatomic) NSInteger pageIndex;
+
+@property (strong, nonatomic) NSString *requestUrl;
+@property (strong, nonatomic) NSDictionary *requestParams;
+@property (strong, nonatomic) NSString *pageIndexKey;
+@property (strong, nonatomic) NSString *pageSizeKey;
 @property (assign, nonatomic) NSInteger pageSize;
-@property (strong, nonatomic) NSString *dataUrl;
+
+- (void)requestDataFromServer;
 
 @end
