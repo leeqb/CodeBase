@@ -23,7 +23,7 @@
 
 @interface CBTableView : UITableView<UITableViewDelegate, UITableViewDataSource>
 
-@property (assign, nonatomic) id<CBTableViewDelegate> custDelegate;
+@property (assign, nonatomic) IBInspectable id<CBTableViewDelegate> custDelegate;
 @property (readonly, nonatomic) NSMutableArray *tableData;
 @property (assign, nonatomic) BOOL pageable;
 @property (readonly, nonatomic) NSInteger pageIndex;

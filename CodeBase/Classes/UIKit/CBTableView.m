@@ -114,9 +114,10 @@ static NSString *g_pageSizeKey = @"pagesize";
                 [self.mj_footer endRefreshing];
             }
         }];
+    } else {
+        NSLog(@"无请求地址");
     }
     
-    NSLog(@"无请求地址");
     if(self.mj_header) {
         [self.mj_header endRefreshing];
     }
