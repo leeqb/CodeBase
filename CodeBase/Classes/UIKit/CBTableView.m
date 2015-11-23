@@ -60,6 +60,10 @@ static NSString *g_pageSizeKey = @"pagesize";
     _pageIndex = 0;
     _tableData = [NSMutableArray array];
     
+    UIView *footerView = [UIView new];
+    footerView.backgroundColor = [UIColor whiteColor];
+    self.tableFooterView = footerView;
+    
     self.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         _pageIndex = 0;
         [self requestDataFromServer];
