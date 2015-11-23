@@ -15,7 +15,6 @@
 
 @optional
 - (NSArray *)handleResponseData:(id)responseObject;
-- (NSInteger)tableView:(CBTableView *)tableView numberOfRowsInSection:(NSInteger)section;
 
 @required
 - (UITableViewCell *)tableView:(CBTableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
@@ -25,15 +24,15 @@
 @interface CBTableView : UITableView<UITableViewDelegate, UITableViewDataSource>
 
 @property (assign, nonatomic) id<CBTableViewDelegate> custDelegate;
-
 @property (readonly, nonatomic) NSMutableArray *tableData;
+@property (assign, nonatomic) BOOL pageable;
 @property (readonly, nonatomic) NSInteger pageIndex;
-
 @property (strong, nonatomic) NSString *requestUrl;
 @property (strong, nonatomic) NSDictionary *requestParams;
-@property (strong, nonatomic) NSString *pageIndexKey;
-@property (strong, nonatomic) NSString *pageSizeKey;
-@property (assign, nonatomic) NSInteger pageSize;
+
++ (void)setGlobalPageSize:(NSInteger)pageSize;
++ (void)setGlobalPageIndexKey:(NSString *)key;
++ (void)setGlobalPageSizeKey:(NSString *)key;
 
 - (void)requestDataFromServer;
 

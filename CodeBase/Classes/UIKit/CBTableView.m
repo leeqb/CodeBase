@@ -9,6 +9,10 @@
 #import "CBTableView.h"
 #import "CBNetworkHelper.h"
 
+static NSInteger g_pageSize = 10;
+static NSString *g_pageIndexKey = @"pageindex";
+static NSString *g_pageSizeKey = @"pagesize";
+
 @implementation CBTableView
 
 #pragma mark - Initialization
@@ -48,21 +52,51 @@
     return self;
 }
 
+- (void)initSelf
+{
+    self.delegate = self;
+    self.dataSource = self;
+    
+    _pageIndex = 0;
+    _tableData = [NSMutableArray array];
+    
+    self.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        _pageIndex = 0;
+        [self requestDataFromServer];
+    }];
+    
+    self.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+        _pageIndex++;
+        [self requestDataFromServer];
+    }];
+    
+    //[self.mj_header beginRefreshing];
+}
+
+#pragma mark - Setter
++ (void)setGlobalPageSize:(NSInteger)pageSize
+{
+    g_pageSize = pageSize;
+}
+
++ (void)setGlobalPageIndexKey:(NSString *)key
+{
+    g_pageIndexKey = key;
+}
+
++ (void)setGlobalPageSizeKey:(NSString *)key
+{
+    g_pageSizeKey = key;
+}
+
 #pragma mark - Public Methods
 - (void)requestDataFromServer
 {
     if(self.requestUrl) {
         NSMutableDictionary *finalParams = [self.requestParams mutableCopy];
-        if(self.pageIndexKey) {
-            finalParams[self.pageIndexKey] = @(self.pageIndex);
-        }
-        
-        if(self.pageSizeKey) {
-            if(self.pageSize > 0) {
-                finalParams[self.pageSizeKey] = @(self.pageSize);
-            } else {
-                finalParams[self.pageSizeKey] = @(10);
-            }
+        if(self.pageable) {
+            finalParams[g_pageIndexKey] = @(self.pageIndex);
+            finalParams[g_pageSizeKey] = @(g_pageSize);
         }
         
         [[CBNetworkHelper shareInstance] post:self.requestUrl parameters:finalParams success:^(AFHTTPRequestOperation *operation, id responseObject) {
@@ -90,27 +124,6 @@
     if(self.mj_footer) {
         [self.mj_footer endRefreshing];
     }
-}
-
-
-#pragma mark - Private Methods
-- (void)initSelf
-{
-    self.delegate = self;
-    self.dataSource = self;
-    _tableData = [NSMutableArray array];
-    
-    self.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
-        _pageIndex = 0;
-        [self requestDataFromServer];
-    }];
-    
-    self.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
-        _pageIndex++;
-        [self requestDataFromServer];
-    }];
-    
-    //[self.mj_header beginRefreshing];
 }
 
 #pragma mark - UITableViewDataSource
