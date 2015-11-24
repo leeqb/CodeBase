@@ -88,6 +88,7 @@ static NSString *g_pageSizeKey = @"pagesize";
     if(_pageable) {
         self.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
             _pageIndex = 0;
+            [self.tableData removeAllObjects];
             [self requestDataFromServer];
         }];
         
