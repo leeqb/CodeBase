@@ -15,4 +15,3 @@
 #define RESOLUTION_HEIGHT   [[UIScreen mainScreen] currentMode].size.height
 
 #import <UIImageView+WebCache.h>
-#import <Masonry.h>
