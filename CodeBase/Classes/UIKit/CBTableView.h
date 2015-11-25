@@ -14,7 +14,7 @@
 @protocol CBTableViewDelegate <UITableViewDelegate>
 
 @optional
-- (NSArray *)handleResponseData:(id)responseObject;
+- (NSArray *)handleResponseData:(CBTableView *)tableView responseObject:(id)responseObject;
 
 @required
 - (UITableViewCell *)tableView:(CBTableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
