@@ -18,6 +18,7 @@
 
 #import "CBAlertView.h"
 #import "CBMessage.h"
+#import "CBView.h"
 #import "CBTableView.h"
 #import "CBButton.h"
 #import "CBCountDownButton.h"
