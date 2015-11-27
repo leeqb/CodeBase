@@ -118,6 +118,7 @@ static NSString *g_pageSizeKey = @"pagesize";
             }
             [self reloadData];
         } failed:^(AFHTTPRequestOperation *operation, NSError *error) {
+            NSLog(@"%@", error);
         } finally:^{
             if(self.mj_header) {
                 [self.mj_header endRefreshing];
