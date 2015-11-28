@@ -60,9 +60,9 @@ static NSString *g_pageSizeKey = @"pagesize";
     _pageIndex = 0;
     _tableData = [NSMutableArray array];
     
-    UIView *footerView = [UIView new];
+    /*UIView *footerView = [UIView new];
     footerView.backgroundColor = [UIColor whiteColor];
-    self.tableFooterView = footerView;
+    self.tableFooterView = footerView;*/
 }
 
 #pragma mark - Setter
