@@ -26,6 +26,7 @@
 		830F8C1C1BEF08FF008DB6FE /* CodeBase.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 830F8C1B1BEF08FF008DB6FE /* CodeBase.podspec */; };
 		832376321BF45A3B00FE054B /* CBAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 832376311BF45A3B00FE054B /* CBAlertView.m */; };
 		832376351BF460CD00FE054B /* CBMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 832376341BF460CD00FE054B /* CBMessage.m */; };
+		832E3FF41C0AC57100BCAC1D /* CBTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 832E3FF31C0AC57100BCAC1D /* CBTextField.m */; };
 		833A5F291BF4A56300404CB4 /* CBValidationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 833A5F281BF4A56300404CB4 /* CBValidationHelper.m */; };
 		833A5F2C1BF4A6C000404CB4 /* CBCountDownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 833A5F2B1BF4A6C000404CB4 /* CBCountDownButton.m */; };
 		833A5F2F1BF4CF1800404CB4 /* CBPListHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 833A5F2E1BF4CF1800404CB4 /* CBPListHelper.m */; };
@@ -94,6 +95,8 @@
 		832376311BF45A3B00FE054B /* CBAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBAlertView.m; sourceTree = "<group>"; };
 		832376331BF460CD00FE054B /* CBMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBMessage.h; sourceTree = "<group>"; };
 		832376341BF460CD00FE054B /* CBMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBMessage.m; sourceTree = "<group>"; };
+		832E3FF21C0AC57100BCAC1D /* CBTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBTextField.h; sourceTree = "<group>"; };
+		832E3FF31C0AC57100BCAC1D /* CBTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBTextField.m; sourceTree = "<group>"; };
 		833A5F271BF4A56300404CB4 /* CBValidationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBValidationHelper.h; sourceTree = "<group>"; };
 		833A5F281BF4A56300404CB4 /* CBValidationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBValidationHelper.m; sourceTree = "<group>"; };
 		833A5F2A1BF4A6C000404CB4 /* CBCountDownButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBCountDownButton.h; sourceTree = "<group>"; };
@@ -284,6 +287,8 @@
 				834D97641BF82A780074BE09 /* CBView.m */,
 				838748041BFB9D6C00571C6A /* CBLabel.h */,
 				838748051BFB9D6C00571C6A /* CBLabel.m */,
+				832E3FF21C0AC57100BCAC1D /* CBTextField.h */,
+				832E3FF31C0AC57100BCAC1D /* CBTextField.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -528,6 +533,7 @@
 				838748061BFB9D6C00571C6A /* CBLabel.m in Sources */,
 				830F8BD11BEF083D008DB6FE /* AppDelegate.m in Sources */,
 				830F8BCE1BEF083D008DB6FE /* main.m in Sources */,
+				832E3FF41C0AC57100BCAC1D /* CBTextField.m in Sources */,
 				830F8C161BEF08E6008DB6FE /* CBBaseTableViewController.m in Sources */,
 				833A5F2F1BF4CF1800404CB4 /* CBPListHelper.m in Sources */,
 				830F8C171BEF08E6008DB6FE /* CBBaseViewController.m in Sources */,
