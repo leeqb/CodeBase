@@ -70,6 +70,9 @@
     _hud = [JGProgressHUD progressHUDWithStyle:JGProgressHUDStyleDark];
     _hud.textLabel.text = @"操作成功";
     [_hud showInView:[UIApplication sharedApplication].keyWindow animated:YES];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self dismiss];
+    });
 }
 
 - (void)showFailed
@@ -78,6 +81,9 @@
     _hud = [JGProgressHUD progressHUDWithStyle:JGProgressHUDStyleDark];
     _hud.textLabel.text = @"操作失败";
     [_hud showInView:[UIApplication sharedApplication].keyWindow animated:YES];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self dismiss];
+    });
 }
 
 - (void)dismiss
