@@ -92,6 +92,16 @@ static NSString *g_pageSizeKey = @"pagesize";
             [self requestDataFromServer];
         }];
         
+        /*self.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+            _pageIndex++;
+            [self requestDataFromServer];
+        }];*/
+    }
+}
+
+- (void)setPageFooter
+{
+    if(_pageable && !self.mj_footer) {
         self.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
             _pageIndex++;
             [self requestDataFromServer];
@@ -116,6 +126,13 @@ static NSString *g_pageSizeKey = @"pagesize";
             if(self.custDelegate && [self.custDelegate respondsToSelector:@selector(handleResponseData:responseObject:)]) {
                 [_tableData addObjectsFromArray:[self.custDelegate handleResponseData:self responseObject:responseObject]];
             }
+            
+            if([_tableData count] >= g_pageSize) {
+                [self setPageFooter];
+            } else {
+                self.mj_footer = nil;
+            }
+            
             [self reloadData];
         } failed:^(AFHTTPRequestOperation *operation, NSError *error) {
             NSLog(@"%@", error);
