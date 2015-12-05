@@ -54,7 +54,7 @@ static NSString *g_pageSizeKey = @"pagesize";
 
 - (void)initSelf
 {
-    self.delegate = self;
+    //self.delegate = self;
     self.dataSource = self;
     
     _pageIndex = 0;
