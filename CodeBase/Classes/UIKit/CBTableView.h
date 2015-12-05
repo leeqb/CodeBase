@@ -17,7 +17,7 @@
 - (NSArray *)handleResponseData:(CBTableView *)tableView responseObject:(id)responseObject;
 
 @required
-- (UITableViewCell *)tableView:(CBTableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
+- (UITableViewCell *)tableView:(CBTableView *)tableView custCellForRowAtIndexPath:(NSIndexPath *)indexPath;
 
 @end
 
