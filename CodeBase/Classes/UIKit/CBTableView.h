@@ -28,7 +28,7 @@
 @property (assign, nonatomic) BOOL pageable;
 @property (readonly, nonatomic) NSInteger pageIndex;
 @property (strong, nonatomic) NSString *requestUrl;
-@property (strong, nonatomic) NSDictionary *requestParams;
+@property (strong, nonatomic) NSMutableDictionary *requestParams;
 
 + (void)setGlobalPageSize:(NSInteger)pageSize;
 + (void)setGlobalPageIndexKey:(NSString *)key;
