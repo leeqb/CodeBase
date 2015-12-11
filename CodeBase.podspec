@@ -147,7 +147,7 @@ Pod::Spec.new do |s|
   # s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  s.dependency 'AFNetworking' #网络请求工具类
+  s.dependency 'AFNetworking', ‘2.6.3’ #网络请求工具类
   s.dependency 'FMDB' #sqlite工具类
   s.dependency 'SVProgressHUD' #进度条
   s.dependency 'JGProgressHUD' #另外一个进度条
