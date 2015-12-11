@@ -1,5 +1,5 @@
 platform :ios, ‘7.0’
-    pod 'AFNetworking' #网络请求工具类
+    pod 'AFNetworking’, ‘2.6.3’ #网络请求工具类
     pod 'FMDB' #sqlite工具类
     pod 'SVProgressHUD' #进度条
     pod 'JGProgressHUD' #另外一个进度条
