@@ -22,6 +22,9 @@
 @end
 
 @interface CBTableView : UITableView<UITableViewDelegate, UITableViewDataSource>
+{
+    BOOL _isLoading;
+}
 
 @property (assign, nonatomic) id<CBTableViewDelegate> custDelegate;
 @property (readonly, nonatomic) NSMutableArray *tableData;

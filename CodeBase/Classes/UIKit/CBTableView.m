@@ -112,7 +112,8 @@ static NSString *g_pageSizeKey = @"pagesize";
 #pragma mark - Public Methods
 - (void)requestDataFromServer
 {
-    if(self.requestUrl) {
+    if(self.requestUrl && !_isLoading) {
+        _isLoading = YES;
         [self.tableData removeAllObjects];
         
         NSMutableDictionary *finalParams = self.requestParams;
@@ -139,6 +140,7 @@ static NSString *g_pageSizeKey = @"pagesize";
         } failed:^(AFHTTPRequestOperation *operation, NSError *error) {
             NSLog(@"%@", error);
         } finally:^{
+            _isLoading = NO;
             if(self.mj_header) {
                 [self.mj_header endRefreshing];
             }
