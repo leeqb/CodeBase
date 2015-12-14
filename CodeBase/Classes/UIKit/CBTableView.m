@@ -113,6 +113,8 @@ static NSString *g_pageSizeKey = @"pagesize";
 - (void)requestDataFromServer
 {
     if(self.requestUrl) {
+        [self.tableData removeAllObjects];
+        
         NSMutableDictionary *finalParams = self.requestParams;
         if(self.pageable) {
             finalParams[g_pageIndexKey] = @(self.pageIndex);
