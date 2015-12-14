@@ -169,7 +169,9 @@ static NSString *g_pageSizeKey = @"pagesize";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if(self.custDelegate && [self.custDelegate respondsToSelector:@selector(tableView:custCellForRowAtIndexPath:)]) {
-        return [self.custDelegate tableView:self custCellForRowAtIndexPath:indexPath];
+        if([self.tableData count] > 0) {
+            return [self.custDelegate tableView:self custCellForRowAtIndexPath:indexPath];
+        }
     }
     
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"CBTableViewCell"];
