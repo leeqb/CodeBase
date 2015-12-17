@@ -22,6 +22,7 @@
 #import "CBTableView.h"
 #import "CBButton.h"
 #import "CBTextField.h"
+#import "CBLabel.h"
 #import "CBCountDownButton.h"
 
 #import "CBBaseModel.h"
