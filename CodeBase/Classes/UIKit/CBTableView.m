@@ -88,7 +88,6 @@ static NSString *g_pageSizeKey = @"pagesize";
     if(_pageable) {
         self.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
             _pageIndex = 0;
-            [self.tableData removeAllObjects];
             [self requestDataFromServer];
         }];
         
@@ -125,6 +124,11 @@ static NSString *g_pageSizeKey = @"pagesize";
         NSLog(@"%@", finalParams);
         
         [[CBNetworkHelper shareInstance] post:self.requestUrl parameters:finalParams success:^(AFHTTPRequestOperation *operation, id responseObject) {
+            if(_pageIndex == 0) {
+                [self.tableData removeAllObjects];
+                [self reloadData];
+            }
+            
             if(self.custDelegate && [self.custDelegate respondsToSelector:@selector(handleResponseData:responseObject:)]) {
                 [_tableData addObjectsFromArray:[self.custDelegate handleResponseData:self responseObject:responseObject]];
             }
