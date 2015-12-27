@@ -59,9 +59,12 @@
 - (void)showProcessing
 {
     [self dismiss];
-    _hud = [JGProgressHUD progressHUDWithStyle:JGProgressHUDStyleDark];
-    _hud.textLabel.text = @"处理中...";
-    [_hud showInView:[UIApplication sharedApplication].keyWindow animated:YES];
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        _hud = [JGProgressHUD progressHUDWithStyle:JGProgressHUDStyleDark];
+        _hud.textLabel.text = @"处理中...";
+        [_hud showInView:[UIApplication sharedApplication].keyWindow animated:YES];
+    });
 }
 
 - (void)showSuccess
