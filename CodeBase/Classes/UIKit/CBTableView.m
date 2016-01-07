@@ -57,7 +57,7 @@ static NSString *g_pageSizeKey = @"pagesize";
     //self.delegate = self;
     self.dataSource = self;
     
-    _pageIndex = 0;
+    _pageIndex = _startPageIndex;
     _tableData = [NSMutableArray array];
     
     /*UIView *footerView = [UIView new];
@@ -87,7 +87,7 @@ static NSString *g_pageSizeKey = @"pagesize";
     
     if(_pageable) {
         self.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
-            _pageIndex = 0;
+            _pageIndex = _startPageIndex;
             [self requestDataFromServer];
         }];
         
