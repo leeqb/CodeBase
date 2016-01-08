@@ -91,9 +91,9 @@
 
 - (void)dismiss
 {
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [_hud dismiss];
-    });
+    //dispatch_async(dispatch_get_main_queue(), ^{
+    [_hud dismiss];
+    //});
 }
 
 @end
