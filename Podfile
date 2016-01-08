@@ -15,4 +15,4 @@ platform :ios, ‘7.0’
     pod 'NJKWebViewProgress' #抓取网页加载进度
     pod 'CRToast'
     pod 'BFKit'
-    pod 'MIHCrypto'
+#pod 'MIHCrypto'
