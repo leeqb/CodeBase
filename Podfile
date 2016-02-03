@@ -13,6 +13,6 @@ platform :ios, ‘7.0’
     pod 'JSBadgeView' #徽章
     pod 'JSONModel' #Model映射
     pod 'NJKWebViewProgress' #抓取网页加载进度
-    pod 'CRToast'
-    pod 'BFKit'
+#pod 'CRToast'
+#pod 'BFKit'
 #pod 'MIHCrypto'
