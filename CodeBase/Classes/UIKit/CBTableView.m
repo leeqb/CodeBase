@@ -81,6 +81,12 @@ static NSString *g_pageSizeKey = @"pagesize";
     g_pageSizeKey = key;
 }
 
+- (void)setStartPageIndex:(NSInteger)startPageIndex
+{
+    _startPageIndex = startPageIndex;
+    _pageIndex = _startPageIndex;
+}
+
 - (void)setPageable:(BOOL)pageable
 {
     _pageable = pageable;
