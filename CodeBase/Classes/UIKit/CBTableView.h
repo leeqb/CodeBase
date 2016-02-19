@@ -30,7 +30,7 @@
 @property (readonly, nonatomic) NSMutableArray *tableData;
 @property (assign, nonatomic) BOOL pageable;
 @property (readonly, nonatomic) NSInteger pageIndex;
-@property (assign, nonatomic) NSInteger startPageIndex;
+@property (assign, nonatomic) IBInspectable NSInteger startPageIndex;
 @property (strong, nonatomic) NSString *requestUrl;
 @property (strong, nonatomic) NSMutableDictionary *requestParams;
 
